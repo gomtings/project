@@ -1,0 +1,9 @@
+﻿  exwinapi.cpp
+C:\Users\tkddn\source\repos\exwinapi\exwinapi\exwinapi.cpp(58,43): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\exwinapi\exwinapi\exwinapi.cpp(113,50): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\exwinapi\exwinapi\exwinapi.cpp(194,10): warning C4101: 'str' :참조되지 않은 지역 변수입니다.
+C:\Users\tkddn\source\repos\exwinapi\exwinapi\exwinapi.cpp(214,22): warning C4244: '=': 'LRESULT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\exwinapi\exwinapi\exwinapi.cpp(237,13): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\exwinapi\exwinapi\exwinapi.cpp(281,13): warning C4244: '초기화 중': 'LRESULT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\exwinapi\exwinapi\exwinapi.cpp(425,12): warning C4244: 'return': 'WPARAM'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  exwinapi.vcxproj -> C:\Users\tkddn\source\repos\exwinapi\x64\Debug\exwinapi.exe
