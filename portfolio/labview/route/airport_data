@@ -1,0 +1,735 @@
+<update>
+170628-01
+</update>
+RKPC
+rwy
+060
+250
+rwyand;
+frequency
+
+APP:121.2,119.0,124.05
+TWR:118.1,118.125
+GND:121.65
+ATIS:126.8
+
+frequencyand;
+rwy6
+ILS RWY 06
+ILS :109.9
+see chart :3400
+6and
+
+rwy25
+ILS RWY 25
+ILS :111.3
+see chart :3400
+25and
+
+VOR RWY 06
+see chart :3400
+END
+VOR RWY 25
+see chart :3400
+END
+
+RKPCEND;
+
+RKPK
+
+rwy
+360
+rwyand;
+
+frequency
+
+ARR:119.2,134.4
+APP:125.5
+TWR:118.1,118.45
+GND:121.9
+ATIS:126.6
+
+frequencyand;
+rwy36
+
+ILS RWY 36L
+ILS :108.5
+ILS RWY 36R
+ILS :108.5
+36L see chart :3500
+36R see chart :3400
+
+36and
+
+VOR RWY 36L
+see chart :3500
+END
+VOR RWY 36R
+see chart :3500
+END
+
+RKPKEND;
+
+RKSI
+
+rwy
+150
+160
+330
+340
+rwyand;
+frequency
+
+APP:119.75,119.9,120.8,121.35,119.05,124.2
+TWR:118.2,118.275,118.8
+GND:118.75,121.7,121.75
+ATIS:128.4,128.2
+
+frequencyand;
+rwy15
+ILS RWY 15L
+ILS :111.9
+ILS RWY 15R
+ILS :109.1
+see chart :1600
+15and
+
+rwy16
+ILS RWY 16
+ILS :110.35
+see chart :1600
+16and
+rwy33
+ILS RWY 33L
+ILS :109.3
+ILS RWY 33R
+ILS :108.9
+see chart :3600
+33and
+rwy34
+ILS RWY 34
+ILS :108.1
+see chart :2600
+34and
+
+VOR RWY 15L
+see chart :3200
+END
+VOR RWY 33R
+see chart :7000
+END
+
+RKSIEND;
+
+RKSS
+
+rwy
+140
+320
+rwyand;
+
+frequency
+
+APP:119.75,123.25,119.9,123.8,120.8,124.2,119.1,121,35,121,4
+TWR:118.1,118.05
+GND:121.9,121.95
+ATIS:126.4
+
+frequencyand;
+rwy14
+ILS RWY 14L
+ILS :109.9
+ILS RWY 14R
+ILS :108.7
+14L see chart :1800
+14R see chart :2800
+14and
+rwy32
+ILS RWY 32R
+ILS :110.7
+see chart :4000
+32and
+
+VOR RWY 32L
+see chart :4000
+END
+VOR RWY 32R
+see chart :4000
+END
+
+
+RKSSEND;
+
+RKTN
+
+rwy
+130
+rwyand;
+
+frequency
+
+APP:135.9
+TWR:126.2
+GND:118.2
+ATIS:127.65
+
+frequencyand;
+rwy13
+ILS RWY 13R
+ILS :108.7
+ILS RWY 13L
+ILS :111.3
+see chart :3400
+13and
+
+VOR RWY 31R
+see chart :3000
+END
+VOR RWY 31L
+see chart :3000
+END
+
+RKTNEND;
+
+RKTU
+
+rwy
+060
+240
+rwyand;
+
+frequency
+
+APP:134.4,134.1,134.0
+TWR:118.7,126.2
+GND:121.875
+ATIS:128.85
+
+frequencyand;
+rwy6
+ILS RWY 06L
+ILS :110.3
+see chart :4400
+6and
+rwy24
+ILS RWY 24R
+ILS :111.7
+see chart :3800
+24and
+
+
+VOR RWY 24R
+see chart :3800
+END
+
+RKTUEND;
+
+ZSPD
+
+rwy
+160
+170
+340
+350
+rwyand;
+
+frequency
+
+APP:120.3,119.75,125.4,119.75,125.85,119.2,123.8,119.2,126.65,128.05,126.3,120.65
+TWR:118.4,124.35,118.8,124.35
+GND:121.8,121.65,121.7
+DVL:121.95,121.7
+ATIS:127.85,131.45
+
+frequencyand;
+rwy16
+ILS RWY 16
+ILS :108.7
+see chart :1970
+16and
+rwy17
+ILS RWY 17L,R
+ILS :110.7(L),111.1(R)
+see chart :2960
+17and
+rwy34
+ILS RWY 34
+ILS :108.3
+see chart :1970
+34and
+rwy35
+ILS RWY 35L,R
+ILS :108.1(L),111.9(R)
+see chart :2960
+35and
+VOR RWY 17L
+see chart :3000
+VOR RWY 35R
+see chart :2960
+END
+
+ZSPDEND;
+VHHH
+
+rwy
+070
+250
+rwyand;
+
+frequency
+
+APP:119.1,119.35
+DIR:119.5,119.35
+PAR:133.7
+TWR:118.2,118.7(North)118.4,118.7(South)
+GND:121.6(North)122.55(South)
+DVL:129.9,124.55
+ATIS:128.2
+
+frequencyand;
+rwy7
+ILS RWY 07L,R
+ILS :111.1(L),109.3(R)
+see chart :1700
+7and
+rwy25
+ILS RWY 25L,R
+ILS :108.9(L),110.9(R)
+see chart :4500
+25and
+VOR RWY 07L
+see chart :2000
+VOR RWY 25R
+see chart :4500
+END
+
+VHHHEND;
+RJSK
+
+rwy
+280
+100
+rwyand;
+
+frequency
+
+CTL:127.575,120.575
+TWR:118.6,126.2
+
+frequencyand;
+rwy28
+ILS RWY 28
+ILS :108.9
+see chart :3000
+28and
+rwy10
+VOR RWY 10
+see chart :3000
+ILS RWY 28
+ILS :108.9
+see chart :3000
+10and
+
+RJSKEND;
+RJFU
+
+rwy
+320
+140
+rwyand;
+
+frequency
+
+APP:119.175
+RAD:119.175,121.025
+TMA:121.175
+TWR:118.5,126.2,122.7
+GND:121.6
+ATIS:126.85
+
+frequencyand;
+rwy32
+ILS RWY 32
+ILS :110.9
+see chart :2600
+32and
+rwy14
+VOR RWY 14
+see chart :4000
+ILS RWY 32
+ILS :110.9
+see chart :2600
+14and
+
+RJFUEND;
+RJSI
+
+rwy
+200
+rwyand;
+
+frequency
+
+CTL:124.5,120.575
+RADIO:118.2,126.2
+
+frequencyand;
+rwy20
+ILS RWY 20
+ILS :109.3
+see chart :4000
+2Oand
+
+
+RJSIEND;
+
+RJTT
+
+rwy
+220
+230
+340
+rwyand;
+
+frequency
+
+APP:119.1,119.4,119.7,124.4,127.7
+RAD:126.5,120.2,120.6,125.525,125.8
+TWR:118.1,118.575,118.725,124.35,118.8,126.2
+GND:121.7,118.225,121.625,121.975
+ATIS:128.8
+
+frequencyand;
+rwy22
+ILS RWY 22
+ILS :108.1
+see chart :5000
+22and
+rwy23
+ILS RWY 23
+ILS :110.5
+see chart :4000
+23and
+rwy34
+ILS RWY 34L,R
+ILS :111.7(L)108.9(R)
+see chart :4000
+34and
+
+VOR RWY 34L
+see chart :3000
+END
+
+RJTTEND;
+
+RJCB
+
+rwy
+350
+170
+rwyand;
+
+frequency
+
+CTL:128.325,134.25
+TWR:118.7,126.2,123.6
+
+frequencyand;
+rwy35
+ILS RWY 35
+ILS :111.7
+see chart :5000
+35and
+rwy17
+VOR RWY 17
+see chart :3000
+ILS RWY 35
+ILS :111.7
+see chart :5000
+17and
+END
+
+RJCBEND;
+
+RJAA
+
+rwy
+160
+340
+rwyand;
+
+frequency
+
+APP:124.4,127.7,125.8
+RAD:120.2
+TWR:118.2,122.7,126.2,118.35
+GND:121.95,121.85
+RAMP:121.6,121.75
+DVL:121.9,121.65
+ATIS:128.25
+
+frequencyand;
+rwy16
+ILS RWY 16
+ILS :110.7
+see chart :1800
+16and
+rwy34
+ILS RWY 34
+ILS :110.9
+see chart :5000
+34and
+END
+
+RJAAEND;
+
+RJOM
+
+rwy
+140
+rwyand;
+
+frequency
+
+APP:128.0
+TWR:118.35,126.2
+ATIS:126.65
+
+frequencyand;
+rwy14
+ILS RWY 14
+ILS :109.3
+see chart :2600
+14and
+END
+
+RJOMEND;
+RJGG
+
+rwy
+180
+360
+rwyand;
+
+frequency
+
+APP:121.05,119.175
+RAD:125.55
+TMA:119.25,121.175
+TWR:118.85,126.2
+GND:121.8,126.2
+DVL:121.85,126.2
+ATIS:127.075
+
+frequencyand;
+rwy18
+ILS RWY 18
+ILS :109.7
+see chart :3500(1800)
+18and
+rwy36
+ILS RWY 36
+ILS :111.9
+see chart :3500(3000)
+36and
+END
+
+RJGGEND;
+RJCM
+
+rwy
+180
+360
+rwyand;
+
+frequency
+
+CTL:128.325,134.25
+TWR:118.85,126.2
+
+frequencyand;
+rwy18
+ILS RWY 18
+ILS :110.1
+see chart :4000(2500)
+18and
+rwy36
+ILS RWY 36
+ILS :110.3
+see chart :4300
+36and
+END
+
+RJCMEND;
+RJFK
+
+rwy
+340
+rwyand;
+
+frequency
+
+APP:126.0,119.4
+RAD:120.8
+TMA:120.0
+TWR:118.2,126.2
+GND:121.7
+ATIS:127.05
+
+frequencyand;
+rwy34
+ILS RWY 34
+ILS :111.7
+see chart :4000(3200)
+34and
+END
+
+RJFKEND;
+RJSA
+
+rwy
+240
+060
+rwyand;
+
+frequency
+
+CTL:127.575,120.575
+TWR:118.3,126.2
+
+frequencyand;
+rwy24
+ILS RWY 24
+ILS :111.9
+see chart :3500
+24and
+rwy6
+VOR RWY 06
+see chart :3000
+ILS RWY 24
+ILS :111.9
+see chart :3500
+6and
+END
+
+RJSAEND;
+RJEC
+
+rwy
+160
+340
+rwyand;
+
+frequency
+
+CTL:132.6,124.25
+TWR:118.55,126.2
+
+frequencyand;
+rwy34
+ILS RWY 34
+ILS :110.5
+see chart :3500
+34and
+rwy16
+VOR RWY 16
+see chart :4000
+ILS RWY 34
+ILS :110.5
+see chart :3500
+16and
+END
+
+RJECEND;
+RJSY
+
+rwy
+090
+270
+rwyand;
+
+frequency
+
+CTL:132.3,135.9
+RADIO:118.8,126.2
+
+frequencyand;
+rwy09
+ILS RWY 09
+ILS :110.9
+see chart :3500
+09and
+rwy27
+LOC RWY 27
+see chart :3500
+ILS RWY 34
+ILS :110.5
+see chart :3500
+27and
+END
+
+RJSYEND;
+RJSS
+
+rwy
+090
+270
+300
+rwyand;
+
+frequency
+APP: 120.4
+RAD: 121.2
+TWR: 118.7,126.2
+GND: 121.7
+ATIS: 126.45
+
+frequencyand;
+rwy09
+RNAV RWY 09
+see chart :4000
+09and
+rwy27
+ILS RWY 27Y(Z)
+ILS :111.7
+see chart :3000(1500)
+27and
+rwy30
+VOR RWY 30
+VOR :116.3
+see chart :3000
+30and
+END
+
+RJSSEND;
+RJSN
+
+rwy
+100
+280
+rwyand;
+
+frequency
+APP: 121.4
+TWR: 118.0,126.2
+ATIS: 128.45
+
+frequencyand;
+rwy10
+VOR RWY 10
+VOR :115.5
+see chart :4000
+10and
+rwy28
+ILS RWY 28
+ILS :109.3
+see chart :3000
+28and
+rwy30
+VOR RWY 30
+VOR :116.3
+see chart :3000
+30and
+END
+
+RJSNEND;

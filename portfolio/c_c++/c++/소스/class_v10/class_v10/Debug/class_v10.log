@@ -1,0 +1,5 @@
+﻿  test08.cpp
+  test09.cpp
+c:\users\lee\source\repos\class_v10\class_v10\test09.cpp(19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  코드를 생성하고 있습니다...
+  class_v10.vcxproj -> C:\Users\lee\source\repos\class_v10\Debug\class_v10.exe

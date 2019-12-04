@@ -1,0 +1,82 @@
+//------------- isound -----------
+public interface isound {
+	public void sound();
+
+}
+//----------- animal -------------
+public class animal implements isound{
+	private String name;
+	
+	animal(){
+		this("anonymous");
+	}
+	animal(String name){
+		this.name=name;
+	}
+	public void  sound(){
+		System.out.print("炼侩洒");
+	}
+	public String reaction(Object a) {
+		if(a instanceof cat) {
+			return "部府郴府绊";
+		}else if(a instanceof dog) {
+			return "部府棵府绊";
+		}
+		else {
+			return "部府如甸";
+		}
+		
+	}
+	public String toString() {
+		return getClass().getName();
+	}
+}
+//--------- cat -----------------
+public class cat extends animal {
+ cat(){
+	 this("anonymous");
+ }
+ cat(String name){
+	 super(name);
+ }
+ public void  sound(){
+		System.out.print("具~克");
+	}
+}
+//-------- dog -----------------
+public class dog extends animal {
+private static int countdog=0;
+dog(){
+	this("anonymous");
+	countdog++;
+}
+dog(String name){
+	super(name);
+	countdog++;
+}
+public void  sound(){
+	for(int i=0;i<(int)(Math.random()*5);i++) {
+		System.out.print("具~克");
+	}
+}
+public static int getCountDog(){
+	return countdog;
+}
+}
+//---------animaltest-----------
+public class animaltest {
+	public static void main(String[] args) {
+		animal[] pets= {
+				new animal(),
+				new cat("nabee"),
+				new cat(),
+				new dog(),
+				new dog("rock"),
+		};
+		for(animal a:pets) {
+			System.out.print("\n" + a +"_"+a.reaction(a));
+			a.sound();
+		}
+		System.out.print("\npet甸 吝 dog绰"+dog.getCountDog()+"付府");
+		}
+	}

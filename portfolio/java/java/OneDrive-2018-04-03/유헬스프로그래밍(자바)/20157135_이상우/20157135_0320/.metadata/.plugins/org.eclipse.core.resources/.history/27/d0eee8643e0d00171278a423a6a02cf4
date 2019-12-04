@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class test6 {
+		public static void main(String[] args){
+		Scanner T7 = new Scanner(System.in);
+		double cc;
+		double cc2;
+		String result;
+		System.out.println("두개의 정수를 입력해 주세요.");
+		 cc = T7.nextDouble(); 
+		 cc2 = T7.nextDouble(); 
+	result =(cc>cc2)? "큰수는." : "작은수는"; 
+	System.out.println("두실수:" + cc + cc2 +"--->"result);
+	
+	}
+}

@@ -1,0 +1,40 @@
+package jav2;
+class t07 {
+	
+	int telnum;
+	String power;
+	static int cellphone;
+	
+	t07 (int telnum ) {
+		this.telnum=telnum;
+		this.power="on";
+		cellphone++;
+	}
+	public void getTotal() {
+		if(power.equals("off")) {
+			power="on";
+			System.out.println("전원을 켯습니다.");
+		}
+		else {
+			power = "off";
+			System.out.println("전원을 종료합니다.");
+		}
+	}
+	public String toString() {
+		String rst;
+		rst="전화번호 : "+telnum+"상태 :";
+		return rst;
+	}
+
+}
+public class test{
+	public void main(String[] args) {
+		t07 t = new t07(0101234);
+		t07 t2 = new t07(01045667);
+		t.getTotal();
+		System.out.println(t);
+		System.out.println(t2);
+		System.out.print("생성된 번호의 개수 :"+t07.cellphone);
+		
+	}
+}

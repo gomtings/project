@@ -1,0 +1,58 @@
+package test;
+public class telbook {
+	private String name;
+	private String tel;
+	private static int num=0;
+	telbook(){
+		this.name="friend";
+		this.tel="010-0000-0000";
+		num++;
+	}
+	telbook(String name,String tel){
+		this.name=name;
+		this.tel=tel;
+		num++;
+	}
+	void setname(String name) {
+		this.name=name;
+	}
+	void settel(String tel) {
+		this.tel=tel;
+	}
+	String getname() {
+		return name;
+	}
+	String gettel() {
+		return tel;
+	}
+	
+	public static void getname(telbook[] book,String tel) {
+		int a = 0;
+		for(int i=0;i<book.length;i++) {
+			if(book[i].tel.equals(tel)){
+				a=i;
+				break;
+			}
+			else {
+				
+			}
+			System.out.println(book[a].name);
+		}
+	}
+	public static void gettel(telbook[] book,String name) {
+		int b = 0;
+		for(int i=0;i<book.length;i++) {
+			if(book[i].name.equals(name)){
+			 b=i;
+			 break;
+			}
+			else {
+				
+			}
+			System.out.println(book[b].tel);
+		}
+	}
+	public static int getnum() {
+		return num;
+	}
+}

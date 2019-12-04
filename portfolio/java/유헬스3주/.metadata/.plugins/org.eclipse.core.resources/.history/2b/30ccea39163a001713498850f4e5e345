@@ -1,0 +1,17 @@
+class tangle {
+	int w ,h;
+	public int area(){
+		return w*h;
+	}
+	public int perimeter(){
+		return (w*2)*(h*2);
+	}
+}
+public class 연습11 {
+	public static void main (String [] args){
+		tangle obj = new tangle();
+		obj.w=2;
+		obj.h=3;
+		System.out.print("넓이 :"+obj.area()+"둘레 :"+obj.perimeter());
+	}
+}

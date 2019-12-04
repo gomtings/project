@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prac1", "prac1\prac1.vcxproj", "{A56EC1C3-3A84-43C9-9CA5-55A14F15171D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prac2", "prac2\prac2.vcxproj", "{5BFF4E28-7625-45B4-B6E0-B3F2D2EDAE85}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prac3-for", "prac3-for\prac3-for.vcxproj", "{3458E2D2-E0FC-4C34-84A1-9717F113B1D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prac3-while", "prac3-while\prac3-while.vcxproj", "{EFF6B28A-2070-470A-8159-847C8D159715}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prac3-do-while", "prac3-do-while\prac3-do-while.vcxproj", "{F81FA558-6A12-4980-9FAB-DA8778FF8657}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prac4", "prac4\prac4.vcxproj", "{B548F530-728F-442E-9D47-F0AC1F0980D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prac5", "prac5\prac5.vcxproj", "{E0B80955-8B3B-4CE3-A1FA-69F7DB33F43C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prac6", "prac6\prac6.vcxproj", "{DE9B8CDB-39AD-46A0-83A3-2D3962CFD1CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A56EC1C3-3A84-43C9-9CA5-55A14F15171D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A56EC1C3-3A84-43C9-9CA5-55A14F15171D}.Debug|Win32.Build.0 = Debug|Win32
+		{A56EC1C3-3A84-43C9-9CA5-55A14F15171D}.Release|Win32.ActiveCfg = Release|Win32
+		{A56EC1C3-3A84-43C9-9CA5-55A14F15171D}.Release|Win32.Build.0 = Release|Win32
+		{5BFF4E28-7625-45B4-B6E0-B3F2D2EDAE85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5BFF4E28-7625-45B4-B6E0-B3F2D2EDAE85}.Debug|Win32.Build.0 = Debug|Win32
+		{5BFF4E28-7625-45B4-B6E0-B3F2D2EDAE85}.Release|Win32.ActiveCfg = Release|Win32
+		{5BFF4E28-7625-45B4-B6E0-B3F2D2EDAE85}.Release|Win32.Build.0 = Release|Win32
+		{3458E2D2-E0FC-4C34-84A1-9717F113B1D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3458E2D2-E0FC-4C34-84A1-9717F113B1D6}.Debug|Win32.Build.0 = Debug|Win32
+		{3458E2D2-E0FC-4C34-84A1-9717F113B1D6}.Release|Win32.ActiveCfg = Release|Win32
+		{3458E2D2-E0FC-4C34-84A1-9717F113B1D6}.Release|Win32.Build.0 = Release|Win32
+		{EFF6B28A-2070-470A-8159-847C8D159715}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EFF6B28A-2070-470A-8159-847C8D159715}.Debug|Win32.Build.0 = Debug|Win32
+		{EFF6B28A-2070-470A-8159-847C8D159715}.Release|Win32.ActiveCfg = Release|Win32
+		{EFF6B28A-2070-470A-8159-847C8D159715}.Release|Win32.Build.0 = Release|Win32
+		{F81FA558-6A12-4980-9FAB-DA8778FF8657}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F81FA558-6A12-4980-9FAB-DA8778FF8657}.Debug|Win32.Build.0 = Debug|Win32
+		{F81FA558-6A12-4980-9FAB-DA8778FF8657}.Release|Win32.ActiveCfg = Release|Win32
+		{F81FA558-6A12-4980-9FAB-DA8778FF8657}.Release|Win32.Build.0 = Release|Win32
+		{B548F530-728F-442E-9D47-F0AC1F0980D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B548F530-728F-442E-9D47-F0AC1F0980D9}.Debug|Win32.Build.0 = Debug|Win32
+		{B548F530-728F-442E-9D47-F0AC1F0980D9}.Release|Win32.ActiveCfg = Release|Win32
+		{B548F530-728F-442E-9D47-F0AC1F0980D9}.Release|Win32.Build.0 = Release|Win32
+		{E0B80955-8B3B-4CE3-A1FA-69F7DB33F43C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E0B80955-8B3B-4CE3-A1FA-69F7DB33F43C}.Debug|Win32.Build.0 = Debug|Win32
+		{E0B80955-8B3B-4CE3-A1FA-69F7DB33F43C}.Release|Win32.ActiveCfg = Release|Win32
+		{E0B80955-8B3B-4CE3-A1FA-69F7DB33F43C}.Release|Win32.Build.0 = Release|Win32
+		{DE9B8CDB-39AD-46A0-83A3-2D3962CFD1CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE9B8CDB-39AD-46A0-83A3-2D3962CFD1CC}.Debug|Win32.Build.0 = Debug|Win32
+		{DE9B8CDB-39AD-46A0-83A3-2D3962CFD1CC}.Release|Win32.ActiveCfg = Release|Win32
+		{DE9B8CDB-39AD-46A0-83A3-2D3962CFD1CC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class sample8 {
+	public static void main(String[]args){
+		char a;
+		char b;
+		int a1;
+		int a2;
+		int x=20;
+		final char ch ='M';
+		System.out.println("기준 문자 M ");
+		Scanner v = new Scanner(System.in);
+		System.out.println("1.문자 입력 ");
+		a = v.next().charAt(0);
+		System.out.println("2.문자 입력 ");
+		b = v.next().charAt(0);
+		a1 =ch - a;
+		a2 =ch - b;
+		
+		if(a1>0 && a2>0 && a1<a2)
+			System.out.print("문자 "+ a +"가(이) "+ ch +"와 가깝습니다.");
+		else if(a1<0 && a2<0 && a1>a2)
+			System.out.print("문자 "+ a +"가(이) "+ ch +"와 가깝습니다.");
+		else if(a1<0 && a2>0 && -a1>a2)
+			System.out.print("문자 "+ b +"가(이) "+ ch +"와 가깝습니다.");
+		else if(a1<0 && a2>0 && -a1<a2)
+			System.out.print("문자 "+ a +"가(이) "+ ch +"와 가깝습니다.");
+		
+		else if(a1>0 && a2>0 && a1>a2)
+			System.out.print("문자 "+ b +"가(이) "+ ch +"와 가깝습니다.");
+		else if(a1<0 && a2<0 && a1<a2)
+			System.out.print("문자 "+ b +"가(이) "+ ch +"와 가깝습니다.");
+		else if(a1>0 && a2<0 && a1>-a2)
+			System.out.print("문자 "+ b +"가(이) "+ ch +"와 가깝습니다.");
+		else if(a1>0 && a2<0 && a1<-a2)
+			System.out.print("문자 "+ a +"가(이) "+ ch +"와 가깝습니다.");
+		
+		else if(a == ch)
+			System.out.print("문자 "+ a +"가(이) "+ ch +"와 가깝습니다.");
+		else if(b == ch)
+			System.out.print("문자 "+ b +"가 (이) "+ ch +"와 가깝습니다.");
+	
+		else if(a == b)
+			System.out.print("문자 "+ a +"와 "+ b +"는 동일합니다.");
+		
+	}
+		}
+
+산술 관계논리순

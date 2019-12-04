@@ -1,0 +1,24 @@
+class tangle {
+	private int w ,h;
+	public tangle( int w, int h){
+		this.w=w;
+		this.h=h;
+	}
+	public int area(){
+		return w*h;
+	}
+	public int perimeter(){
+		return (w*2)*(h*2);
+	}
+	public String toSring(){
+		return "넓이 :"+area()+"둘레 :"+perimeter();
+	}
+	
+}
+public class 연습11 {
+	public static void main (String [] args){
+		tangle obj = new tangle(2,2);
+
+		System.out.print( obj.toSring());
+	}
+}

@@ -1,0 +1,74 @@
+package move;
+public class animal {
+	private String name;
+	public animal() {
+	this("");	
+	}
+	public animal(String name) {
+		this.name=name;
+		}
+
+	String getname(){
+		return name;
+	}
+	public String reaction(Object a) {
+		if(a instanceof animal) {
+			return "animal 部府如甸 炼侩洒";
+		}
+		else if(a instanceof cat) {
+			return "cat 部府郴府绊 具~侩";
+		}
+		else if(a instanceof dog) {
+			return "dog 部府棵府绊";
+		}
+		return name;
+	}
+	void sound() {
+	System.out.print(" 炼侩洒");
+		}
+}
+class cat extends animal{
+	cat(){}
+	cat(String name){
+	super(name);
+	}
+	void sound() {
+		System.out.print("具~克");
+	}
+}
+class dog extends animal{
+	static int count=0;
+	dog(){}
+	dog(String name){
+	 super(name);
+	}
+	
+	int a;
+	void sound() {
+		a=(int)(Math.random()*5+1);
+		for(int i=0;i<=a;i++) {
+			System.out.print(" 港港");
+		}
+	}
+	 static int getcountDog(){
+		 return count;
+		}
+}
+----------------------------------------------------
+package move;
+public class animaltest {
+	public static void main(String[] args) {
+	animal[] pets= {
+			new animal(),
+			new cat("nabee"),
+			new cat(),
+			new dog(),
+			new dog("rock"),
+	};
+	for(animal a:pets) {
+		System.out.print("\n" + a +"_"+a.reaction(a));
+		a.sound();
+	}
+	System.out.print("\npet甸 吝 dog绰"+dog.getcountDog()+"付府");
+	}
+}

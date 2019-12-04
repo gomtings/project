@@ -1,0 +1,53 @@
+package »ó¼Ó;
+
+public class food {
+	private int cal;
+	private int cost;
+	private int kg;
+
+	public int getcal() {
+		return cal;
+	}
+
+	public void setcal(int cal) {
+		this.cal = cal;
+	}
+
+	public int getcost() {
+		return cost;
+	}
+
+	public void setcost(int cost) {
+		this.cost = cost;
+	}
+
+	public int getkg() {
+		return kg;
+	}
+
+	public void setkg(int kg) {
+		this.kg = kg;
+	}
+
+}
+class melon extends food {
+	private String info;
+	
+	melon(int cal ,int cost,int kg,String info ){
+		//super( cal , cost, kg);
+		this.info=info;
+	}
+
+	public String getinfo() {
+		return info;
+	}
+	public void setinfo(String info) {
+		this.info = info;
+	}
+	
+	public String toString(){
+		String str;
+		str = 
+		return
+	}
+}

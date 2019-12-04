@@ -1,0 +1,7 @@
+
+public class test0306 {
+public static void main(String[] arg){
+	System.out.println(12.5);
+	System.out.println(3.4);
+}
+}

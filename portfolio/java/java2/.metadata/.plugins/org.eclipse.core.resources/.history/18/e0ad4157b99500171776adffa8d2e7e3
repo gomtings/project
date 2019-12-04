@@ -1,0 +1,21 @@
+package jav2;
+import java.util.*;
+public class t07_test {
+	public static void main(String[] artgs) {
+		Scanner key = new Scanner(System.in);
+	/*
+		t07 t = new t07(1234);
+		t07 t2 = new t07(45667); 
+		t.getTotal();
+		System.out.println(t);
+		System.out.println(t2);
+		System.out.print("积己等 锅龋狼 俺荐 :"+t07.cellphone);	
+		*/ //07~08锅 巩力 按眉 积己何
+		t07[] t07arry = null ;
+		t07arry = new t07[5];
+		for(int i=0;i<t07arry.length;i++) {
+			int x=key.nextInt();
+			t07arry[i] = new t07( key.nextInt() );
+		}
+	}
+}

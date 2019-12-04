@@ -1,0 +1,16 @@
+yesClearance Delivery
+12314qwdasfasfasfascafawqeqwe
+Ground
+필요한 메모를 할수 있습니다. 
+Tower(Departure)
+필요한 메모를 할수 있습니다. 
+Departure
+필요한 메모를 할수 있습니다. 
+control
+필요한 메모를 할수 있습니다. 
+Approach
+필요한 메모를 할수 있습니다. 
+Tower(Arrival)
+필요한 메모를 할수 있습니다. 
+Ground(Arrival)
+필요한 메모를 할수 있습니다. 

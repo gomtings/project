@@ -1,0 +1,1605 @@
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km.
+end
+
+RKSSRJTT:
+Distance
+ 666 nm / 1,234 km.
+end
+
+RKSSRJTT:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RJTT</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>35000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RJTT</DestinationID>
+		<DestinationLLA>N35° 32' 53.71",E139° 47' 18.79",+000000.00</DestinationLLA>
+		<Descr>RKSS, RJTT</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>Tokyo Haneda Intl</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CUN">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N36° 37' 55.30",E128° 19' 31.40",+032900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CUN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="PAROT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N36° 20' 41.00",E128° 50' 16.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>PAROT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KPO">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 58' 38.90",E129° 28' 27.60",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KPO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SAPRA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 49' 26.00",E130° 43' 25.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SAPRA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="STAGE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 34' 51.67",E132° 41' 35.67",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>STAGE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="JEC">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.02",E133° 5' 38.09",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>JEC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TOHGO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 30' 51.20",E133° 51' 17.24",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TOHGO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="YME">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 28' 50.49",E135° 8' 13.28",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>YME</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="AKANE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.55",E137° 30' 3.15",+023900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>AKANE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DF">
+			<ATCWaypointType>NDB</ATCWaypointType>
+			<WorldPosition>N35° 34' 47.16",E139° 22' 34.53",+004300.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DF</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RJTT">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N35° 32' 53.71",E139° 47' 18.79",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RJTT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 666 nm / 1,234 km.
+end
+
+RKSSRJTT:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RJTT</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>35000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RJTT</DestinationID>
+		<DestinationLLA>N35° 32' 53.71",E139° 47' 18.79",+000000.00</DestinationLLA>
+		<Descr>RKSS, RJTT</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>Tokyo Haneda Intl</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CUN">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N36° 37' 55.30",E128° 19' 31.40",+032900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CUN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="PAROT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N36° 20' 41.00",E128° 50' 16.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>PAROT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KPO">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 58' 38.90",E129° 28' 27.60",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KPO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SAPRA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 49' 26.00",E130° 43' 25.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SAPRA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="STAGE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 34' 51.67",E132° 41' 35.67",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>STAGE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="JEC">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.02",E133° 5' 38.09",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>JEC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TOHGO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 30' 51.20",E133° 51' 17.24",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TOHGO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="YME">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 28' 50.49",E135° 8' 13.28",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>YME</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="AKANE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.55",E137° 30' 3.15",+023900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>AKANE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DF">
+			<ATCWaypointType>NDB</ATCWaypointType>
+			<WorldPosition>N35° 34' 47.16",E139° 22' 34.53",+004300.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DF</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RJTT">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N35° 32' 53.71",E139° 47' 18.79",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RJTT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 666 nm / 1,234 km.
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km.
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km.
+end
+
+RKSSRJTT:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RJTT</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>35000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RJTT</DestinationID>
+		<DestinationLLA>N35° 32' 53.71",E139° 47' 18.79",+000000.00</DestinationLLA>
+		<Descr>RKSS, RJTT</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>Tokyo Haneda Intl</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CUN">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N36° 37' 55.30",E128° 19' 31.40",+032900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CUN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="PAROT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N36° 20' 41.00",E128° 50' 16.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>PAROT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KPO">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 58' 38.90",E129° 28' 27.60",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KPO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SAPRA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 49' 26.00",E130° 43' 25.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SAPRA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="STAGE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 34' 51.67",E132° 41' 35.67",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>STAGE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="JEC">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.02",E133° 5' 38.09",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>JEC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TOHGO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 30' 51.20",E133° 51' 17.24",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TOHGO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="YME">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 28' 50.49",E135° 8' 13.28",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>YME</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="AKANE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.55",E137° 30' 3.15",+023900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>AKANE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DF">
+			<ATCWaypointType>NDB</ATCWaypointType>
+			<WorldPosition>N35° 34' 47.16",E139° 22' 34.53",+004300.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DF</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RJTT">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N35° 32' 53.71",E139° 47' 18.79",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RJTT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 666 nm / 1,234 km.
+end
+
+RKSSRJTT:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RJTT</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>35000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RJTT</DestinationID>
+		<DestinationLLA>N35° 32' 53.71",E139° 47' 18.79",+000000.00</DestinationLLA>
+		<Descr>RKSS, RJTT</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>Tokyo Haneda Intl</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CUN">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N36° 37' 55.30",E128° 19' 31.40",+032900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CUN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="PAROT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N36° 20' 41.00",E128° 50' 16.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>PAROT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KPO">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 58' 38.90",E129° 28' 27.60",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KPO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SAPRA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 49' 26.00",E130° 43' 25.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SAPRA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="STAGE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 34' 51.67",E132° 41' 35.67",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>STAGE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="JEC">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.02",E133° 5' 38.09",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>JEC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TOHGO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 30' 51.20",E133° 51' 17.24",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TOHGO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="YME">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 28' 50.49",E135° 8' 13.28",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>YME</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="AKANE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.55",E137° 30' 3.15",+023900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>AKANE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DF">
+			<ATCWaypointType>NDB</ATCWaypointType>
+			<WorldPosition>N35° 34' 47.16",E139° 22' 34.53",+004300.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DF</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RJTT">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N35° 32' 53.71",E139° 47' 18.79",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RJTT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 666 nm / 1,234 km.
+end
+
+RKSSRJTT:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RJTT</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>35000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RJTT</DestinationID>
+		<DestinationLLA>N35° 32' 53.71",E139° 47' 18.79",+000000.00</DestinationLLA>
+		<Descr>RKSS, RJTT</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>Tokyo Haneda Intl</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CUN">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N36° 37' 55.30",E128° 19' 31.40",+032900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CUN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="PAROT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N36° 20' 41.00",E128° 50' 16.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>PAROT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KPO">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 58' 38.90",E129° 28' 27.60",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KPO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SAPRA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 49' 26.00",E130° 43' 25.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SAPRA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="STAGE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 34' 51.67",E132° 41' 35.67",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>STAGE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="JEC">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.02",E133° 5' 38.09",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>JEC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TOHGO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 30' 51.20",E133° 51' 17.24",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TOHGO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="YME">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 28' 50.49",E135° 8' 13.28",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>YME</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="AKANE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.55",E137° 30' 3.15",+023900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>AKANE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DF">
+			<ATCWaypointType>NDB</ATCWaypointType>
+			<WorldPosition>N35° 34' 47.16",E139° 22' 34.53",+004300.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DF</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RJTT">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N35° 32' 53.71",E139° 47' 18.79",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RJTT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 666 nm / 1,234 km.
+end
+
+RKSSRJTT:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RJTT</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>35000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RJTT</DestinationID>
+		<DestinationLLA>N35° 32' 53.71",E139° 47' 18.79",+000000.00</DestinationLLA>
+		<Descr>RKSS, RJTT</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>Tokyo Haneda Intl</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CUN">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N36° 37' 55.30",E128° 19' 31.40",+032900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CUN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="PAROT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N36° 20' 41.00",E128° 50' 16.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>PAROT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KPO">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 58' 38.90",E129° 28' 27.60",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KPO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SAPRA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 49' 26.00",E130° 43' 25.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SAPRA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="STAGE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 34' 51.67",E132° 41' 35.67",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>STAGE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="JEC">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.02",E133° 5' 38.09",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>JEC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TOHGO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 30' 51.20",E133° 51' 17.24",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TOHGO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="YME">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 28' 50.49",E135° 8' 13.28",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>YME</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="AKANE">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 52.55",E137° 30' 3.15",+023900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>AKANE</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DF">
+			<ATCWaypointType>NDB</ATCWaypointType>
+			<WorldPosition>N35° 34' 47.16",E139° 22' 34.53",+004300.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DF</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RJTT">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N35° 32' 53.71",E139° 47' 18.79",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RJTT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 666 nm / 1,234 km.
+end
+
+RKSSRJTT:<html>
+<head><title>400 Bad Request</title></head>
+<body bgcolor="white">
+<center><h1>400 Bad Request</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Distance
+ 666 nm / 1,234 km.
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km.
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km.
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km.
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km.
+end
+
+WSSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>WSSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>35000</CruisingAlt>
+		<DepartureID>WSSS</DepartureID>
+		<DepartureLLA>N1° 21' 6.90",E103° 59' 44.17",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>WSSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Singapore Changi Intl. Airport</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="WSSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N1° 21' 6.90",E103° 59' 44.17",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>WSSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KIBOL">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N2° 52' 24.00",E104° 28' 18.00",+034100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KIBOL</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KILOT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N3° 2' 17.00",E104° 40' 23.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KILOT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MABAL">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N3° 28' 26.00",E105° 12' 36.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MABAL</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MUMSO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N3° 44' 20.00",E105° 32' 13.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MUMSO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MABLI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N4° 17' 17.00",E106° 12' 47.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MABLI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MELAS">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N7° 5' 18.00",E108° 9' 12.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MELAS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MOXON">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N8° 49' 30.00",E109° 21' 18.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MOXON</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MAPNO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N10° 13' 6.00",E110° 20' 6.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MAPNO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MIMUX">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N11° 18' 18.00",E111° 6' 12.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MIMUX</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MUGAN">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N12° 22' 0.00",E111° 52' 18.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MUGAN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MESOX">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N13° 58' 48.00",E113° 2' 42.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MESOX</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MONBO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N14° 30' 0.00",E113° 25' 42.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MONBO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MIGUG">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N15° 16' 24.00",E114° 0' 0.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MIGUG</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MAVRA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N17° 46' 40.21",E116° 30' 7.18",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MAVRA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MUMOT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N19° 1' 42.90",E117° 47' 23.01",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MUMOT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MIKIN">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N19° 20' 6.70",E118° 6' 35.10",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MIKIN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RECON">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N21° 23' 59.00",E118° 24' 12.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RECON</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CYRUS">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N22° 12' 57.00",E118° 31' 54.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CYRUS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RENOT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N22° 34' 6.00",E118° 30' 44.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RENOT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TONGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N23° 10' 39.00",E119° 35' 28.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TONGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TOROX">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N23° 21' 14.00",E119° 54' 29.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TOROX</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ANLOT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N23° 56' 27.00",E120° 31' 21.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ANLOT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="HLG">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N24° 38' 24.00",E120° 46' 59.99",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>HLG</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="APU">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N25° 10' 37.00",E121° 31' 20.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>APU</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="BAKER">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N25° 38' 36.00",E121° 52' 48.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>BAKER</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="BESTO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N26° 8' 17.70",E122° 15' 30.70",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>BESTO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="BERBA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N27° 4' 41.00",E123° 0' 0.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>BERBA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SALMI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N28° 18' 54.00",E124° 0' 0.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SALMI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="BOLOD">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N29° 35' 13.08",E125° 1' 29.62",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>BOLOD</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ATOTI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N30° 0' 12.92",E125° 11' 53.54",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ATOTI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CJU">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N33° 23' 5.00",E126° 37' 27.00",+002100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CJU</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 2,381 nm / 4,410 km.
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km. 
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km. 
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km. 
+end
+
+RKSSRKPC:<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>RKSS to RKPC</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>31000</CruisingAlt>
+		<DepartureID>RKSS</DepartureID>
+		<DepartureLLA>N37° 33' 29.92",E126° 47' 26.10",+000000.00</DepartureLLA>
+		<DestinationID>RKPC</DestinationID>
+		<DestinationLLA>N33° 30' 32.33",E126° 29' 21.83",+000000.00</DestinationLLA>
+		<Descr>RKSS, RKPC</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Seoul Gimpo</DepartureName>
+		<DestinationName>JEJU INTL</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="RKSS">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N37° 33' 29.92",E126° 47' 26.10",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKSS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="DADGA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 53' 55.00",E126° 53' 47.00",+031000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>DADGA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="ALADI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N35° 31' 15.00",E126° 51' 18.00",+026100.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>ALADI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KWA">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 7' 34.20",E126° 48' 44.00",+020000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KWA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RKPC">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N33° 30' 32.33",E126° 29' 21.83",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RKPC</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>
+Distance
+ 245 nm / 453 km. 
+end
+

@@ -1,0 +1,11 @@
+package jav2;
+public class t07_test {
+	public static void main(String[] artgs) {
+		t07 t = new t07(1234);
+		t07 t2 = new t07(45667);
+		t.getTotal();
+		System.out.println(t);
+		System.out.println(t2);
+		System.out.print("생성된 번호의 개수 :"+t07.cellphone);	
+	}
+}

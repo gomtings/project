@@ -1,0 +1,19 @@
+package test;
+import java.util.*;
+public class testbook {
+	public static void main(String[] args) {
+		Scanner key = new Scanner(System.in);
+		telbook[] book=new telbook[5];
+		book[0]=new telbook("이상우","001");
+		book[1]=new telbook("이찬혁","002");
+		book[2]=new telbook("김기태","003");
+		book[3]=new telbook("최원영","004");
+		book[4]=new telbook("우건희","005");
+		System.out.println("번호를 입력해 주세요.");
+		telbook.getname(book,key.next());
+		System.out.println("이름을 입력해 주세요.");
+		telbook.gettel(book,key.next());
+		System.out.println("회원수는 : "+telbook.getnum()+"명 입니다.");
+                             book[0].setname("홍길동");
+	}
+}

@@ -1,0 +1,163 @@
+03---------------------
+import java.util.*;
+import java.io.*;
+
+public class file03 {
+	public static void main(String[] args) throws IOException{
+		Scanner key = new Scanner(System.in);
+		FileOutputStream out = null;
+		int str;
+		try {
+			out = new FileOutputStream("out_a.txt", false);
+			do {
+				System.out.println("문자를 입력하세요");
+				str=key.next().charAt(0);
+				if(Character.toLowerCase(str)=='q')
+					break;
+				out.write(str);
+			} while (true);
+
+		}finally {
+			out.close();
+			System.out.println("프로그램 을 종료 합니다.");
+		}
+	}
+}
+04==========================
+import java.io.*;
+	public class file04 {
+		public static void main(String[] args) throws IOException{
+			FileInputStream in = null;
+			FileOutputStream out = null;
+			int str;
+			try {
+				in = new FileInputStream("out_a.txt");
+				while((str = in.read()) !=-1){
+					System.out.print((char)str+" ");
+					}
+			}finally {
+				in.close();
+				System.out.println("프로그램 을 종료 합니다.");
+			}
+		}
+	}
+05========================
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.*;
+public class file05 {
+		public static void main(String[] args) throws IOException{
+			FileInputStream in = null;
+			FileOutputStream out = null;
+			int str;
+			try {
+				in = new FileInputStream("out_a.txt");
+				out = new FileOutputStream("out_b.txt");
+				do {
+					str=in.read();
+					out.write((char)str);
+				} while (str!=-1);
+			}finally {
+				in.close();
+				System.out.println("프로그램 을 종료 합니다.");
+			}
+		}
+	}
+06================================
+import java.io.*;
+import java.util.*;
+public class file06 {
+	public static void main(String[] args) throws IOException{
+		Scanner key = new Scanner(System.in);
+		FileWriter out = null;
+		try{
+			System.out.println("문자열을 입력해 주세요.");
+			out= new FileWriter("out.txt");
+			 out.write(key.next());
+		}finally{
+			out.close();
+			System.out.println("종료합니다.");
+		}
+	}
+}
+07-----------------------------------
+import java.io.*;
+public class file07 {
+	public static void main(String[] args) throws IOException{
+		BufferedReader out1= null;
+		try {
+			out1 =new BufferedReader(new FileReader("out.txt"));
+			String str;
+			 while ((str = out1.readLine()) != null) {
+			        System.out.println(str);
+			        
+			      }
+			 out1.close();
+		}finally {
+			System.out.println("프로그램 을 종료 합니다.");
+		}
+	}
+}
+08-------------------------------
+import java.io.*;
+public class file08 {
+	public static void main(String[] args) throws IOException{
+		BufferedReader in= null;
+		BufferedWriter out= null;
+		String str;
+		try {
+			in = new BufferedReader(new FileReader("out.txt"));
+			out = new BufferedWriter(new FileWriter("in.txt"));
+		while((str=in.readLine())!=null) { 
+			System.out.println(str);
+			out.flush();
+			out.write(str);	
+			out.flush();
+		}
+			
+		}finally {
+			System.out.println("프로그램 을 종료 합니다.");	
+		}
+		
+		
+	}
+}
+09=============================
+import java.io.*;
+import java.util.*;
+public class file09 {
+	public static void main(String[] args) {
+		Scanner key  = new Scanner(System.in);
+		DataOutputStream out =null;
+		//out.write(key.nextDouble());
+		try {
+			out = new DataOutputStream(new FileOutputStream("data.txt"));
+			System.out.println("실수 한개를 입력해 주세요!");
+			out.writeDouble(key.nextDouble());
+			out.close();
+		} catch (Exception e) {
+		}finally {
+			System.out.println("프로그램 을 종료 합니다.");	
+		}
+	}
+}
+10======================================
+import java.io.*;
+public class file10 {
+	public static void main(String[] args) {
+		DataInputStream out =null;
+		try {
+			Double a;
+			out = new DataInputStream(new FileInputStream("data.txt"));
+				System.out.println(out.readDouble());
+				if(out != null)
+					out.close();
+			out.close();
+		} catch (Exception e) {
+		}finally {
+			System.out.println("프로그램 을 종료 합니다.");	
+		}
+	}
+}
+====================================

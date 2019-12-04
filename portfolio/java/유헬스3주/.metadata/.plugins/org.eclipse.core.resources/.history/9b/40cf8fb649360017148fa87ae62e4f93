@@ -1,0 +1,26 @@
+package °´Ã¼;
+class mov{
+	String Mname;
+	double point;
+	String movs;
+	int year;
+	void write(){
+		System.out.println(Mname);
+		System.out.println(point);
+		System.out.println(movs);
+		System.out.println(year);
+		
+	}
+	
+}
+public class Movie {
+	public static void main(String [] args){
+		mov mov =new mov();
+		mov.Mname="³ëÀë¿µÈ­";
+		mov.point=9.9;
+		mov.movs="ÀÌ»ó¿ì";
+		mov.year=2017;
+		mov.write();
+		
+	}
+}

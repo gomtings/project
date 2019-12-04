@@ -1,0 +1,28 @@
+package jav2;
+import java.util.*;
+public class t07_test {
+	public static void main(String[] artgs) {
+		Scanner key = new Scanner(System.in);
+	/*
+		t07 t = new t07(1234);
+		t07 t2 = new t07(45667); 
+		t.getTotal();
+		System.out.println(t);
+		System.out.println(t2);
+		System.out.print("생성된 번호의 개수 :"+t07.cellphone);	
+		*/ //07~08번 문제 객체 생성부
+		t07[] t07arry = null ;
+		t07arry = new t07[5];
+		for(int i=0;i<t07arry.length;i++) {
+			System.out.println("번호를 입력해 주세요.");
+			t07arry[i] = new t07( key.nextInt() );
+		}
+		System.out.println("검색할 번호를 입력하세요.");
+		int x = key.nextInt();
+		for(int i=0; i<t07arry.length;i++) {
+			
+		}
+		System.out.print(t07arry[1].telnum);
+
+	}
+}

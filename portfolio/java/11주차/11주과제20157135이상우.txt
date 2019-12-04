@@ -1,0 +1,105 @@
+=======11번===========
+package arrryliste;
+import java.util.ArrayList;
+public class j11 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();//ArrayList 생성
+		list.add("a");// add 메소드를 통해 원소를 추가한다.  
+		list.add("b");
+		list.add("c");
+		list.add("d");
+		list.add("e");
+		 for(int i=0; i<list.size();i++) {
+			 System.out.println(list.get(i)); // 원소를 출력한다. get메소드를 통해
+		 }
+	}
+
+}
+===========12번================
+package arrryliste;
+import java.util.*;
+public class RandomList<T> {
+	Random r = new Random(); // 난수 생성 객체
+	String[] sample = {"i", "walk", "the", "line"}; // 문자열 배열  
+	List<T> list = (List<T>) Arrays.asList(sample); 배열을 리스트로 변경한다,. 
+	public void add(T item) {
+		list.add(item); // 원소 추가. 
+	}
+	public T select() {
+		return list.get(r.nextInt(list.size())); // 랜덤 출력 한다,. 
+	}
+}
+--------------------------
+package arrryliste;
+
+public class test {
+	public static void main(String[] args){
+		RandomList<String>  rand =new RandomList<String>();
+		System.out.println(rand.select()); // 출력  
+	}
+}
+
+
+==============================
+=============13번=============
+package arrryliste;
+
+public class MyMath<T extends Number> {
+	double d=0.0;
+	public double getAverage(T[] ar){
+		for(int i=0;i<ar.length;i++) {
+			d+=ar[i].doubleValue(); // 총합 구하기
+		}
+		return d/ar.length; // 평균을 구한다. 
+	}
+}
+
+---------------------------
+package arrryliste;
+public class MyMathtest {
+	public static void main(String[] args) {
+		MyMath<Integer> Int = new MyMath<Integer>();
+		Integer[] lnt = {88,24,96,36,45};// 인티저 배열 (int 의 객체타입)
+		  Double [] dou = {22.05,99.9,36.4,67.3,83.76}; //더블형 배열(double의 객체타입)
+		  MyMath<Integer> INT = new MyMath<Integer>(); // 제너릭 MyMath 을 정수형으로 
+		  System.out.println( INT.getAverage(lnt)); // 출력 
+		  MyMath<Double> DOUBLE = new MyMath<Double>();// 제너릭 MyMath 을 더블형으로 
+		  System.out.println(DOUBLE.getAverage(dou));	// 출력 
+	}
+}
+---------------------------
+==========14번=============
+package arrryliste;
+
+public class Pair<T> {
+	private T data; // 제너릭의 필드 
+	private T data2;// 제너릭의 필드 
+	public Pair(T data,T data2) { // 생성자 
+		this.data = data;
+		this.data2 = data2;
+	}
+   public void setdata(T data,T data2){ // 설정자 
+	   this.data=data;
+	   this.data2=data2;
+   }
+   public T getdata() { // 접근자
+	   return data;
+   }
+   public T getdata2() { // 접근자2
+	   return data2;
+   }
+   public String toString() { // toString 
+	   String str ="1."+data+"2."+data2+" 입니다.";
+	   return str;
+   }
+}
+------------------------------
+package arrryliste;
+
+public class MyPairtest {
+	public static void main(String[] args) {
+		Pair<String> fruit = new Pair<String>("사과","포도");// 문자열 형식의 제너릭 Pair 생성  
+		System.out.println(fruit);// 출력 
+	}
+
+}

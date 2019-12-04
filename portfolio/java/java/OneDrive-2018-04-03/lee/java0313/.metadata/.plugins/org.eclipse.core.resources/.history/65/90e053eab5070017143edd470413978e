@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class t6 {
+	public static void main(String[] args){
+		Scanner key=new Scanner(System.in);
+		int data ; //입력 밭은 데이터 저장  
+		//키보드로 입력받은  데이터를 변수 data 에 저장 
+		System.out.print("정수 입력 ===");
+				data =key.nextInt();
+				System.out.println("data =" + data);
+	}
+
+}

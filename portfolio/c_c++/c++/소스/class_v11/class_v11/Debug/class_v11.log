@@ -1,0 +1,3 @@
+﻿  ex01.cpp
+c:\users\lee\source\repos\class_v11\class_v11\ex01.cpp(47): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  class_v11.vcxproj -> C:\Users\lee\source\repos\class_v11\Debug\class_v11.exe

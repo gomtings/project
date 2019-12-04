@@ -1,0 +1,11 @@
+public class adb {
+	public static void main(String[] args){
+		
+		int z =10;
+		int n= 20;
+		System.out.println("순서대로 AND , OR , XOR 연산입니다.");
+		System.out.println( z == 0 && n == 0 );//x,y가 모두 참일때
+		System.out.println(z == 0 || n == 0); //x,y중 하나만 참이면 참 모두 거짓이면 거짓
+		System.out.println(z == 0 ^ n == 0); // x가 참이면 거짓 x가 거짓이면 참
+	}
+}

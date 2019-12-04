@@ -1,0 +1,23 @@
+interface ijob {
+double getpay(double hour);
+}
+interface ipin{
+int getpin();
+}
+public cless person{
+String name;//이름
+String arg;//학번,사번
+public person(){this("","");}
+public person(String name,String arg){
+this.name=name;
+this.arg=arg;
+}
+public String toString(){
+String str;
+str = "";
+return str;
+}
+}
+public class student{
+String enter;
+String pay;

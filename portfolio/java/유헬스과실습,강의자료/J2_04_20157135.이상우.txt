@@ -1,0 +1,164 @@
+//-------------------------------------------------------------------------
+class bank {
+	Scanner key = new Scanner(System.in);
+	int account;// 계좌
+	int momey;// 돈
+	double rate = 5.0; // 이자율
+	static int account_count = 0;
+
+	bank() {
+		this(0, 0, 5.0);
+	}
+
+	bank(int account, int momey, double rate) {
+		this.account = account;
+		this.momey = momey;
+		this.rate = rate;
+	}
+
+	public void setaccount(int account) {
+		this.account = account;
+		account_count++;
+	}
+
+	public int getaccount() {
+		return account;
+	}
+
+	public void setmomey(int momey) {
+		this.momey += momey;
+	}
+
+	public int getmomey() {
+		return momey;
+	}
+
+	public double getrate() {
+		return rate;
+	}
+
+	public void outcon_money(consumer[] con, int outm ,int acc) { // 출금
+
+				if (con[acc].momey < outm) {
+					System.out.println("출금 금액이 예금 금액보다 많습니다. 출금이 불가 합니다.");
+				} else {
+					con[acc].con_momey+=outm;
+					System.out.println("고객의 예금잔액은: " + (con[acc].momey - outm) + "입니다." + "소지금액은:" + con[acc].con_momey );
+				} 
+
+		}
+
+	public void outrate(consumer[] con,int acc) { // 이자지급
+		con[acc].con_momey+= (con[acc].momey * con[acc].rate);
+		System.out.println("고객의 잔액은: " + con[acc].con_momey + "입니다.");
+	}
+
+}
+
+class consumer extends bank {
+
+	String con_account;// 계좌
+	int con_momey;// 돈
+
+	consumer() {
+		this("", 0);
+	}
+
+	consumer(String con_account, int con_momey) {
+		this.con_account = con_account;
+		this.con_momey = con_momey;
+	}
+
+	public void setcon_momey(int con_momey) {
+		this.con_momey = con_momey;
+	}
+
+	public int getcon_momey() {
+		return con_momey;
+	}
+
+	public void incon_money(consumer[] con,int inmomey,int acc) { // 입금
+
+				if (con[acc].con_momey<inmomey) {
+			System.out.println("입금 금액이 소지 금액보다 많습니다. 입금이 불가 합니다.");	
+				} else {
+				con[acc].momey += inmomey;
+				System.out.println("고객의 잔액은: " + (con[acc].con_momey - inmomey) + "입니다." + "은행예금은:" + con[acc].momey);
+
+				}
+
+		}
+	}
+//-------------------------------test-----------------------------------------
+
+import java.util.*;
+public class contest {
+	public static void main(String[] args) {
+		Scanner key = new Scanner(System.in);
+		consumer[] con = new consumer[10];
+		for(int i = 0; i < con.length; i++) {
+			con[i]=new consumer();
+		}
+		for(int i = 0; i < con.length; i++) {
+			con[i].setcon_momey(50000);
+		}
+	while(true) {
+	System.out.print("1:계좌 생성/2:입금/3:출금/4:이자 지급 요청/5:종료");	
+	int z=key.nextInt();
+	switch(z) {
+	case 1:
+		for(int i = 0; i < con.length; i++) {
+			System.out.print("사용할 계좌번호를 입력해 주세요.");	
+			con[i].setaccount( key.nextInt() );
+		}
+		break;
+	case 2:
+		System.out.print("입금할 계좌 번호 입력");	
+		int z1=key.nextInt();
+		for(int i = 0; i < con.length; i++) {
+			if(con[i].account==z1) {
+				int x=i;
+				System.out.print("입금할 금액 입력");	
+				int z2=key.nextInt();	
+		    con[x].incon_money(con,z2,x);
+			}
+		}
+		break;
+		
+	case 3:
+		System.out.print("출금할 계좌 번호 입력");	
+		int z2=key.nextInt();
+		for(int i = 0; i < con.length; i++) {
+			if(con[i].account==z2) {
+				int x=i;
+				System.out.print("출금 금액 입력");	
+				int z3=key.nextInt();	
+		    con[x].outcon_money(con,z3,x);
+			}
+		}
+		break;
+	case 4:
+		System.out.print("입금할 계좌 번호 입력");	
+		int z3=key.nextInt();
+		for(int i = 0; i < con.length; i++) {
+			if(con[i].account==z3) {
+				int x=i;	
+		    con[x].outrate(con,x);
+			}
+		}
+		
+		break;
+	case 5:
+		if(z==5)
+			break;
+		break;
+		
+		default :
+			System.out.println("잘못 선택 하셧습니다.");
+		
+	}
+	
+	}
+
+	}
+}
