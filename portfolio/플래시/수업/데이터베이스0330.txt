@@ -1,0 +1,48 @@
+ctrl+c//빠져나오기   이후 use education; 후 다시 에러난곳부터 시작.
+alter table pet rename ******;//테이블명바꾸기
+drop table ********;//테이블 삭제
+drop database zoo; //db삭제
+desc ******; 테이블 정보 확인
+select * from *****; //테이블 확인
+----------------------------------------------------------------
+create database education; //데이터베이스 만들기
+use education;
+source c:/apm_setup/htdocs/****.sql //소스파일(테이블) 불러오기
+desc ****;//테이블확인
+load data local infile 'c:/apm_setup/htdocs/*****.csv' into table ****** fields terminated by ','; //테이블로 자료불러오기
+select * from *****; //테이블자료확인
+학생테이블애 본인추가
+ insert into student(scode, sname, sdept, sphone) values(‘S007’, '이상우', '컴퓨터정보과 ', '010-1234-5678'); 
+
+전체 학생 리스트를 이름순서로 출력
+select * from student order by sname;
+
+ 전체 교수 리스트를 학과별로 출력
+ select * from prof order by pdept, pname;
+
+ 전체 교수 리스트를 이름 역순으로 출력
+select * from prof order by pname desc;
+
+각 학과별 교수님은 몇 분인지 구하는 검색식을 작성
+select pdept, count(*) from prof group by pdept;
+
+학생테이블에서 '박소명' 이름을 '박지성'으로 변경하는 문장을 작성
+update student set sname = '박지성' where sname='박소명';
+
+ MySQL 과목을 강의하는 교수님의 이름, 전화번호와 강의실을 검색
+select p.pname, p.pphone, c.croom from prof as p, course as c, lecture as l where c.cname = 'MySQL' and c.ccode = l.lccode and l.lpcode = p.pcode;
+
+'김구' 교수님이 강의하는 과목명, 강의 시수와 강의실을 검색하는 문장을 작성하라.
+select c.cname, c.ctime, c.croom from prof as p, course as c, lecture as l where p.pname = '김 구' and p.pcode = l.lpcode and l.lccode = c.ccode;
+
+ 각 학생이 수강 신청한 과목에 대해서 학생이름, 전화번호, 과목명, 강의실, 강의 시수를 검색
+select s.sname, s.sphone, c.cname, c.ctime, c.croom from student as s, course as c, register as r where s.scode = r.rscode and r.rccode = c.ccode order by s.sname, c.cname;
+
+각 학생이 신청한 총 강의시수을 구하는 검색식을 작성
+select s.sname, s.sdept, s.sphone, sum(c.ctime) from student as s, course as c, register as r where s.scode = r.rscode and r.rccode = c.ccode group by s.sname;
+
+ 강의 시수가 2 인 과목들의 강의 시수를 하나 증가 시키고, 강의실
+을 Lab1 로 변경하라.
+update course set ctime = ctime + 1, croom = 'Lab1' where ctime=2;
+
+select * from *****; //테이블 확인

@@ -1,0 +1,224 @@
+MFC 응용프로그램-단일문서/0322/ 
+클레스뷰/클레스마법사 메시지
+-ontimer,ondestroy
+가
+
+
+// T0322View.cpp : CT0322View 클래스의 구현
+//
+
+#include "stdafx.h"
+// SHARED_HANDLERS는 미리 보기, 축소판 그림 및 검색 필터 처리기를 구현하는 ATL 프로젝트에서 정의할 수 있으며
+// 해당 프로젝트와 문서 코드를 공유하도록 해 줍니다.
+#ifndef SHARED_HANDLERS
+#include "T0322.h"
+#endif
+
+#include "T0322Doc.h"
+#include "T0322View.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+
+// CT0322View
+
+IMPLEMENT_DYNCREATE(CT0322View, CView)
+
+BEGIN_MESSAGE_MAP(CT0322View, CView)
+	// 표준 인쇄 명령입니다.
+	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
+	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
+	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CT0322View::OnFilePrintPreview)
+	ON_WM_CONTEXTMENU()
+	ON_WM_RBUTTONUP()
+	ON_WM_TIMER()
+	ON_WM_DESTROY()
+END_MESSAGE_MAP()
+
+// CT0322View 생성/소멸
+
+CT0322View::CT0322View()
+{
+	// TODO: 여기에 생성 코드를 추가합니다.
+	 //X = 301, Y =1; //좌표 (400.0)
+	X = 1, Y =181; //좌표 (400.0)
+}
+
+CT0322View::~CT0322View()
+{
+}
+
+BOOL CT0322View::PreCreateWindow(CREATESTRUCT& cs)
+{
+	// TODO: CREATESTRUCT cs를 수정하여 여기에서
+	//  Window 클래스 또는 스타일을 수정합니다.
+
+	return CView::PreCreateWindow(cs);
+}
+
+// CT0322View 그리기
+
+void CT0322View::OnDraw(CDC* pDC)
+{
+	CT0322Doc* pDoc = GetDocument();
+	ASSERT_VALID(pDoc);
+	if (!pDoc)
+		return;
+
+	// TODO: 여기에 원시 데이터에 대한 그리기 코드를 추가합니다.
+	for (int x = 0; x<15; x++)
+    for (int y = 0; y<15; y++)
+	{
+		pDC -> MoveTo (0, 30*x);
+		pDC -> LineTo (15*30, 30*x);
+		pDC -> MoveTo (30*y, 0 );
+		pDC -> LineTo (30*y, 15*30);
+
+	}
+}
+
+
+
+// CT0322View 인쇄
+
+
+void CT0322View::OnFilePrintPreview()
+{
+#ifndef SHARED_HANDLERS
+	AFXPrintPreview(this);
+#endif
+}
+
+BOOL CT0322View::OnPreparePrinting(CPrintInfo* pInfo)
+{
+	// 기본적인 준비
+	return DoPreparePrinting(pInfo);
+}
+
+void CT0322View::OnBeginPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
+{
+	// TODO: 인쇄하기 전에 추가 초기화 작업을 추가합니다.
+}
+
+void CT0322View::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
+{
+	// TODO: 인쇄 후 정리 작업을 추가합니다.
+}
+
+void CT0322View::OnRButtonUp(UINT /* nFlags */, CPoint point)
+{
+	ClientToScreen(&point);
+	OnContextMenu(this, point);
+}
+
+void CT0322View::OnContextMenu(CWnd* /* pWnd */, CPoint point)
+{
+#ifndef SHARED_HANDLERS
+	theApp.GetContextMenuManager()->ShowPopupMenu(IDR_POPUP_EDIT, point.x, point.y, this, TRUE);
+#endif
+}
+
+
+// CT0322View 진단
+
+#ifdef _DEBUG
+void CT0322View::AssertValid() const
+{
+	CView::AssertValid();
+}
+
+void CT0322View::Dump(CDumpContext& dc) const
+{
+	CView::Dump(dc);
+}
+
+CT0322Doc* CT0322View::GetDocument() const // 디버그되지 않은 버전은 인라인으로 지정됩니다.
+{
+	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CT0322Doc)));
+	return (CT0322Doc*)m_pDocument;
+}
+#endif //_DEBUG
+
+
+// CT0322View 메시지 처리기
+
+
+void CT0322View::OnTimer(UINT_PTR nIDEvent)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	//화면(800*500)에 랜덤하게 위치를 바꾸며 사각형 그리기
+	//사각형 시작 위치 정하기 
+	//int x,y;//화면의 위치 변수 
+	//X = rand() % 800 ;
+	//Y = rand() % 500 ;
+
+	//화면제어 변수 
+
+	//bmpout(300,100,1);
+	//bmpout(330,130,1);
+
+	//CClientDC dc(this);
+	//dc.Rectangle(X,Y , X + 30 , Y+30 );//30,30 크기의 사각형 그리기 
+	//Y=Y+30;
+
+	 bmpout(X , Y , 0);
+	if( X<300)   X = X+30;
+	else X = 1;
+	bmpout(X , Y , 1);
+
+	 //bmpout(X , Y , 0);
+	//if( X<300)   X = Y+30;
+	//else Y = 1;
+	//bmpout(X , Y , 1);
+
+	CView::OnTimer(nIDEvent);
+}
+
+
+void CT0322View::OnInitialUpdate()
+{
+	CView::OnInitialUpdate();
+
+	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
+    SetTimer(0,200,NULL);
+}
+
+
+
+//좌표 (X,Y)에 흰색 =0 검은 색 =1로 지정하는 사각형(30*30)을 출력
+void CT0322View::bmpout(int x , int y, int col)
+{
+	CClientDC dc(this);
+	CDC mDC;
+	mDC.CreateCompatibleDC(&dc);
+	CBitmap map1;
+	map1.LoadBitmapW(IDB_BITMAP1);
+	CBitmap *old = (CBitmap *) mDC.SelectObject(&map1);
+	dc.BitBlt(x,y,29,29,&mDC, col*29, 0, SRCCOPY);
+	mDC.SelectObject(old);
+}
+
+void CT0322View::OnDestroy()
+{
+	CView::OnDestroy();
+
+	// TODO: 여기에 메시지 처리기 코드를 추가합니다.
+KillTimer(0); 
+}
+
+
+-------------------------
+T0322View.h 
+------------------------
+
+// 작업입니다.
+public:
+	int X , Y ; // 화면의 사각형 시작위치 첫번째 할일
+	void CT0322View::bmpout(int x , int y, int col); // 사각형 출력 합수
+// 재정의입니다.
+
+-----------------------
+리소스뷰/비트맵-우클릭 비트맵 추가   0~29  검은색 색칠...
+----------------------------------------------

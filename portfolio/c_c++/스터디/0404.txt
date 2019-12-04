@@ -1,0 +1,71 @@
+7-4
+---------------------
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int a,b;
+	char ch;
+	while(1)
+	{
+		printf("\n 계산할 두 수의 입력(멈추려면 ctrl+c) :");
+		scanf_s('%d  %d",&a, &b);
+			printf("\n 계산할 연산자 입력")
+			scanf_s("%c",&ch,1);
+		switch (ch);
+		{
+			case '+';
+				printf("%d+%d=%d 입니다. \n",a,b,a+b);
+				break;
+              case '-';
+				printf("%d-%d=%d 입니다. \n",a,b,a-b);
+				break;
+				case '*';
+				printf("%d*%d=%d 입니다. \n",a,b,a*b);
+				break;
+				case '/';
+				printf("%d / %d=%d 입니다. \n",a,b,a/b);
+				break;
+				case '%';
+				printf("%d % %d=%d 입니다. \n",a,b,a%b);
+				break;
+				default :
+					printf("연산자를 잘못 입력 햇습니다.\n");
+		}
+	}while(1);
+	return 0;
+}
+
+
+
+
+
+-------------------------------------
+
+// ex7_6.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int menu;
+	do
+	{
+		printf("\n손님 몆번 주문하시겟습니까?");
+		printf("\n<1>카페라떼,\n<2>카푸치노,\n<3>아메리카노,\n<4>그만 주문할래요==>");
+		scanf_s("%d", &menu);
+
+		switch(menu)
+		{
+		case 1 : printf("#카페라떼 주문하셧습니다.\n");break;
+        case 2 : printf("#카푸치노 주문하셧습니다.\n");break;
+        case 3 : printf("#아메리카노 주문하셧습니다.\n");break;
+		case 4 : printf("#주문하신커피 준비하겟습니다.\n");break;
+		default : printf("잘못 주문 하셧습니다.\n");
+
+		}
+
+	return 0;
+}
+--------------------------------

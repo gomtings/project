@@ -1,0 +1,62 @@
+Linear Algebra(3차)
+1.6
+traffic flow			교통의 흐름
+vehicle				차량
+one-way street			일방통행길
+downtown			시내
+intersection			교차로
+flow in				유입하다
+flow out			유출하다
+1.7
+linear independence		일차 독립
+linear dependence		일차 종속
+linear dependence relation	일차 종속관계
+preceding vector		앞에 있는 벡터
+subscript			첨자
+1.8
+linear transformation		선형변환
+domain				정의역
+codomain			공역
+shear transformation		층밀림 변환
+preserve			보존하다
+property			성질
+superposition principle		중첩의 원리
+contraction			수축
+dilation				팽창 
+1.9
+identity matrix			항등행렬
+implement			수행하다
+illustrate 		설명하다
+reflection		반사
+vertical			수직의
+horizontal		수평의
+onto			전사(변화)
+one-to-one		일대일(변화)
+1.10 
+diet			식이요법
+provide			제공하다
+nutritious		영양가있는
+nonfat			무지방
+soy flour			콩가루
+whey			유장
+유장: 우유가 엉겨서 응고되고 남은 액체
+protein			단백질
+carbohydrate		탄수화물
+fat			지방
+nutrient			영양
+foodstuff		식료품, 영양소
+electrical network	전기 회로망
+voltage source		전압원
+battery			배터리
+current			전류
+electron			전자
+resistor			저항기
+resistance		저항
+voltage drop		전압강하
+measure		측정하다
+ampere			암페어
+branch			지선
+opposite direction	반대 방향
+algebraic sum		대수적 합
+Ohm's law		옴의 법칙
+Kirchhoff's law		키르히호프의 법칙

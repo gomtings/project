@@ -1,0 +1,33 @@
+ftp://220.149.141.146/
+create database sample; //sample 데이터베이스만들기
+mysql> create database sample;
+mysql> use sample;
+Database changed
+create table test(
+ num int not null,
+ name char(20),
+age int);
+ insert into test values(1,'이상우',23);
+ insert into test values(2,'이상우',23);
+insert into test values(3,'이상우',23);
+insert into test values(4,'이상우',23);
+ insert into test values(5,'이상우',23);
+quit
+mysqldump -uroot -papmsetup --database sample > c:/apm_setup/htdocs/sample
+mysql -uroot -papmsetup <c:/apm_setup/htdocs/sample
+mysql -uroot -papmsetup
+mysql> use sample;
+Database changed
+select * from test;
+----------------------
+create database haksa1;
+use haksa1;
+source c:/apm_setup/htdocs/****.sql //소스파일(테이블) 불러오기
+desc ****;//테이블확인
+load data local infile 'c:/apm_setup/htdocs/*****.csv' into table ****** fields terminated by ','; //테이블로 자료불러오기
+select * from *****; //테이블자료확인
+mysqldump -uroot -papmsetup --database sample > c:/apm_setup/htdocs/S130128_0504
+복구
+mysql -uroot -papmsetup <c:/apm_setup/htdocs/S130128_0504
+mysql -uroot -papmsetup
+use education;

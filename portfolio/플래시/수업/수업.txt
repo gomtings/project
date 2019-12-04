@@ -1,0 +1,55 @@
+mysql -uroot -papmsetup
+show databases;
+create database sample;
+show databases;
+
+use sample;
+create table friend(
+num int NOT NULL,
+name char(10),
+address char(80),
+tel char(20),
+PRIMARY KEY(num)
+);
+
+desc friend;
+show tables;
+alter table friend add age int; 		나이추가
+alter table friend all email char(30) after address;  주소다음칸에  이메일추가
+alter table friend drop email; 		이메일 삭제
+alter table friend rename student;  	테이블 이름변경
+
+inser into student(num, name, adress, tel, age) values(1, ' 이름', ' 주소', '전화', 20);
+생성
+
+select * from student; 
+delete from student where num=2;
+
+load data local infile "c:apm_setup/htdoc/student.csv" into table student fields terminated by ','; 	student 불러오기
+select * from student; 
+========================================
+
+select name, address from student;  		이름하고 주소만 보기
+select * from student where age>=22 and age<= 24; 	나이 22~24 만보기
+select * from student where name like '박%';		박씨만 보기
+select * from student where address like '원주%' or name like '박%';   	원주 or 박씨만 보기
+
+select * from student where order by age;   	나이순으로 보기
+select * from student where order by age desc;   	역순으로 보기
+select * from student where order by name;   	이름순으로 보기
+
+selcet * from student order by name;
+alter table student change name name char(10) binary;  	바이너리 값으로 바꿔야 이름이 순서대로 나온다.
+selcet * from student order by name;
+
+update student set tel='033-730-0776' where name='이름';	이름의 전화번호 업데이트(바꾸기)
+select * from student into outfile "c:apm_setup/htdoc/student5.csv" fields terminated by ',';     student5 파일 만들기
+
+crearte table juso like student;  	student 파일을 복사해서 juso로 만든다.
+select * from juso; 		비어있다.
+crearte table juso like student; 
+
+load data local infile "c:apm_setup/htdoc/student5.csv" into table juso fields terminated by ','; 	student5를 juso로 불러오기
+
+
+

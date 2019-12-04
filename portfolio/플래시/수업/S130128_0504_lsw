@@ -1,0 +1,303 @@
+-- MySQL dump 10.13  Distrib 5.1.41, for Win32 (ia32)
+--
+-- Host: localhost    Database: haksa1
+-- ------------------------------------------------------
+-- Server version	5.1.41-community
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `haksa1`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `haksa1` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `haksa1`;
+
+--
+-- Table structure for table `attend`
+--
+
+DROP TABLE IF EXISTS `attend`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `attend` (
+  `stu_no` char(10) NOT NULL,
+  `att_year` char(4) NOT NULL,
+  `att_term` int(1) NOT NULL,
+  `att_isu` int(1) NOT NULL,
+  `sub_code` char(5) NOT NULL,
+  `prof_code` char(4) NOT NULL,
+  `att_point` int(1) NOT NULL,
+  `att_grade` int(3) DEFAULT '0',
+  `att_div` char(1) NOT NULL DEFAULT 'N',
+  `att_jae` char(1) NOT NULL DEFAULT '1',
+  `att_date` date NOT NULL,
+  PRIMARY KEY (`stu_no`,`att_year`,`att_term`,`sub_code`,`prof_code`,`att_jae`),
+  KEY `su_att_fk` (`sub_code`),
+  KEY `pr_att_fk` (`prof_code`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `attend`
+--
+
+LOCK TABLES `attend` WRITE;
+/*!40000 ALTER TABLE `attend` DISABLE KEYS */;
+INSERT INTO `attend` VALUES ('INSERT INT','',0,0,'','',0,0,'','','0000-00-00'),('(\'20061011','\'200',1,3,'4001','\'400',3,99,'\'','\'','0000-00-00'),('(\'20061011','\'200',1,4,'4002','\'400',3,95,'\'','\'','0000-00-00'),('(\'20061011','\'200',1,4,'4003','\'400',3,97,'\'','\'','0000-00-00'),('(\'20061011','\'200',1,4,'4004','\'400',3,98,'\'','\'','0000-00-00'),('(\'20061011','\'200',1,4,'4005','\'400',3,96,'\'','\'','0000-00-00'),('(\'20061011','\'200',1,4,'4006','\'400',3,95,'\'','\'','0000-00-00'),('(\'20061011','\'200',2,3,'4007','\'400',3,93,'\'','\'','0000-00-00'),('(\'20061011','\'200',2,4,'4008','\'400',3,92,'\'','\'','0000-00-00'),('(\'20061011','\'200',2,4,'4009','\'400',3,94,'\'','\'','0000-00-00'),('(\'20061011','\'200',2,4,'4010','\'400',3,90,'\'','\'','0000-00-00'),('(\'20061011','\'200',2,4,'4011','\'400',3,91,'\'','\'','0000-00-00');
+/*!40000 ALTER TABLE `attend` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `circle`
+--
+
+DROP TABLE IF EXISTS `circle`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `circle` (
+  `cir_num` int(4) NOT NULL AUTO_INCREMENT,
+  `cir_name` char(30) NOT NULL,
+  `stu_no` char(10) NOT NULL,
+  `stu_name` char(10) NOT NULL,
+  `president` char(1) NOT NULL DEFAULT '2',
+  PRIMARY KEY (`cir_num`),
+  KEY `s_ci_fk` (`stu_no`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `circle`
+--
+
+LOCK TABLES `circle` WRITE;
+/*!40000 ALTER TABLE `circle` DISABLE KEYS */;
+INSERT INTO `circle` VALUES (1,'','','',''),(2,'\'ÄÄ¸ÍÅ»Ãâ\'','\'20061011\'','\'°íÇýÁø\'','\''),(3,'','','',''),(4,'\'ÄÄ¸ÍÅ»Ãâ\'','\'20071300\'','\'À¯ÇÏ³ª\'','\''),(5,'','','',''),(6,'\'ÄÄ¸ÍÅ»Ãâ\'','\'20071307\'','\'±è¹®¿µ\'','\''),(7,'','','',''),(8,'\'Java±æ¶óÀâÀÌ\'','\'20071001\'','\'Àå¼öÀÎ\'','\''),(9,'','','',''),(10,'\'Java±æ¶óÀâÀÌ\'','\'20041007\'','\'Á¤ÀÎÁ¤\'','\''),(11,'','','',''),(12,'\'Java±æ¶óÀâÀÌ\'','\'20001015\'','\'¹ÚµµÁØ\'','\''),(13,'','','',''),(14,'\'PHP±æ¶óÀâÀÌ\'','\'20001021\'','\'ÀÌ»ó±æ\'','\'');
+/*!40000 ALTER TABLE `circle` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `department`
+--
+
+DROP TABLE IF EXISTS `department`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `department` (
+  `dept_code` int(2) NOT NULL,
+  `dept_name` char(30) NOT NULL,
+  `dept_ename` varchar(50) DEFAULT NULL,
+  `Create_date` date DEFAULT NULL,
+  PRIMARY KEY (`dept_code`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `department`
+--
+
+LOCK TABLES `department` WRITE;
+/*!40000 ALTER TABLE `department` DISABLE KEYS */;
+INSERT INTO `department` VALUES (0,'',NULL,NULL);
+/*!40000 ALTER TABLE `department` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fee`
+--
+
+DROP TABLE IF EXISTS `fee`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `fee` (
+  `stu_no` varchar(10) NOT NULL,
+  `fee_year` varchar(4) NOT NULL,
+  `fee_term` int(1) NOT NULL,
+  `fee_enter` int(7) DEFAULT NULL,
+  `fee_price` int(7) NOT NULL,
+  `fee_total` int(7) NOT NULL DEFAULT '0',
+  `jang_code` char(2) DEFAULT NULL,
+  `jang_total` int(7) DEFAULT NULL,
+  `fee_pay` int(7) NOT NULL DEFAULT '0',
+  `fee_div` char(1) NOT NULL DEFAULT 'N',
+  `fee_date` date NOT NULL,
+  PRIMARY KEY (`stu_no`,`fee_year`,`fee_term`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fee`
+--
+
+LOCK TABLES `fee` WRITE;
+/*!40000 ALTER TABLE `fee` DISABLE KEYS */;
+INSERT INTO `fee` VALUES ('INSERT INT','',0,NULL,0,0,NULL,NULL,0,'','0000-00-00'),('(\'20061011','\'200',1,500000,3000000,3500000,'01',500000,3000000,'\'','0000-00-00'),('(\'20061011','\'200',2,0,3000000,3000000,'10',2500000,500000,'\'','0000-00-00'),('(\'20001015','\'200',1,500000,2500000,3000000,'02',1000000,2000000,'\'','0000-00-00'),('(\'20001015','\'200',2,0,2500000,2500000,'10',2500000,0,'\'','0000-00-00');
+/*!40000 ALTER TABLE `fee` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `post`
+--
+
+DROP TABLE IF EXISTS `post`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `post` (
+  `post_no` varchar(7) NOT NULL,
+  `post_dong` char(30) NOT NULL,
+  `post_address` char(60) NOT NULL,
+  `ddd` char(4) DEFAULT NULL,
+  PRIMARY KEY (`post_no`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `post`
+--
+
+LOCK TABLES `post` WRITE;
+/*!40000 ALTER TABLE `post` DISABLE KEYS */;
+INSERT INTO `post` VALUES ('INSERT ','','',NULL),('(\'556-8',' \'È­¾ç¸é\'',' \'Àü¶ó³²µµ ¿©¼ö½Ã È­¾ç¸é\'',' \'06'),('(\'540-1',' \'»ý¸ñµ¿\'',' \'Àü¶ó³²µµ ¼øÃµ½Ã »ý¸ñµ¿\'',' \'06'),('(\'451-8',' \'ÆØ¼ºÀ¾\'',' \'°æ±âµµ ÆòÅÃ½Ã ÆØ¼ºÀ¾\'',' \'03'),('(\'545-8',' \'±¤¾çÀ¾\'',' \'Àü¶÷³²µµ ±¤¾ç½Ã ±¤¾çÀ¾\'',' \'06'),('(\'540-8',' \'ÇØ·æ¸é\'',' \'Àü¶ó³²µµ ¼øÃµ½Ã ÇØ·æ¸é\'',' \'06'),('(\'550-1',' \'¼­±³µ¿\'',' \'Àü¶ó³²µµ ¿©¼ö½Ã ¼­±³µ¿\'',' \'06'),('(\'150-0',' \'½Å±æ1µ¿\'',' \'¼­¿ïÆ¯º°½Ã ¿µµîÆ÷±¸ ½Å±æ1µ¿\'',' \'02'),('(\'500-1',' \'¿î¾Ïµ¿\'',' \'±¤ÁÖ±¤¿ª½Ã ºÏ±¸ ¿î¾Ïµ¿\'',' \'06'),('(\'506-0',' \'¼ÒÃÌµ¿\'',' \'±¤ÁÖ±¤¿ª½Ã ±¤»ê±¸ ¼ÒÃÌµ¿\'',' \'06'),('(\'545-0',' \'±¤¿µµ¿\'',' \'Àü¶ó³²µµ ±¤¾ç½Ã ±¤¿µµ¿\'',' \'06');
+/*!40000 ALTER TABLE `post` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `professor`
+--
+
+DROP TABLE IF EXISTS `professor`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `professor` (
+  `prof_code` char(4) NOT NULL,
+  `prof_name` char(10) NOT NULL,
+  `prof_ename` varchar(30) DEFAULT NULL,
+  `Create_date` date DEFAULT NULL,
+  PRIMARY KEY (`prof_code`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `professor`
+--
+
+LOCK TABLES `professor` WRITE;
+/*!40000 ALTER TABLE `professor` DISABLE KEYS */;
+INSERT INTO `professor` VALUES ('INSE','',NULL,NULL),('(\'40','\'Á¤Áø¿ë\'','\'Jung jin-yong\'','0000-00-00'),('(\'50','\'Á¤Á¾ÇÊ\'','\'Jung jong-phil\'','0000-00-00');
+/*!40000 ALTER TABLE `professor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `score`
+--
+
+DROP TABLE IF EXISTS `score`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `score` (
+  `stu_no` char(10) NOT NULL,
+  `sco_year` char(4) NOT NULL,
+  `sco_term` int(1) NOT NULL,
+  `req_point` int(2) DEFAULT NULL,
+  `take_point` int(2) DEFAULT NULL,
+  `exam_avg` float(2,1) DEFAULT NULL,
+  `exam_total` int(4) DEFAULT NULL,
+  `sco_div` char(1) DEFAULT NULL,
+  `sco_date` date DEFAULT NULL,
+  PRIMARY KEY (`stu_no`,`sco_year`,`sco_term`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `score`
+--
+
+LOCK TABLES `score` WRITE;
+/*!40000 ALTER TABLE `score` DISABLE KEYS */;
+INSERT INTO `score` VALUES ('INSERT INT','',0,NULL,NULL,NULL,NULL,NULL,NULL),('(\'20061011','\'200',1,18,18,4.5,580,'\'','0000-00-00'),('(\'20061011','\'200',2,18,18,4.0,552,'\'','0000-00-00'),('(\'20071300','\'200',1,18,18,4.4,577,'\'','0000-00-00'),('(\'20071307','\'200',1,18,18,4.4,575,'\'','0000-00-00'),('(\'20071405','\'200',1,18,18,4.2,572,'\'','0000-00-00'),('(\'20061300','\'200',2,18,18,0.0,0,'\'','0000-00-00'),('(\'20061307','\'200',2,18,18,0.0,0,'\'','0000-00-00'),('(\'20061405','\'200',2,18,18,0.0,0,'\'','0000-00-00');
+/*!40000 ALTER TABLE `score` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `student`
+--
+
+DROP TABLE IF EXISTS `student`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `student` (
+  `stu_no` char(10) NOT NULL,
+  `stu_name` char(10) NOT NULL,
+  `stu_ename` varchar(30) DEFAULT NULL,
+  `dept_code` int(2) NOT NULL,
+  `grade` int(1) NOT NULL,
+  `class` int(1) NOT NULL,
+  `juya` char(2) DEFAULT NULL,
+  `id_num` varchar(14) NOT NULL,
+  `post_no` varchar(7) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `tel` varchar(14) DEFAULT NULL,
+  `phone_no` varchar(14) DEFAULT NULL,
+  `birth_year` char(4) DEFAULT NULL,
+  PRIMARY KEY (`stu_no`),
+  KEY `s_dp_fk` (`dept_code`),
+  KEY `s_ps_fk` (`post_no`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `student`
+--
+
+LOCK TABLES `student` WRITE;
+/*!40000 ALTER TABLE `student` DISABLE KEYS */;
+INSERT INTO `student` VALUES ('INSERT INT',' \'±èÀ¯½Å\'',' \'Kim Yoo-Shin\'',40,4,3,' \'','\r',NULL,NULL,NULL,NULL,NULL),('000000-111','\'556-820\'','\'¾ÈÆ÷¸® 28¹øÁö\'',0,0,0,NULL,'',NULL,NULL,NULL,NULL,NULL),('(\'20001021',' \'ÀÌ»ó±æ\'',' \'Lee Sang-Gil\'',40,4,1,' \'',' \'000000-11111','\'451-80','\'¾ÈÁ¤¸® ÁÖ°øAPT 107µ¿ 504È£\'','\'031)666-6666\'','NULL','\'197'),('(\'20041002',' \'±èÀ¯¹Ì\'',' \'Kim Yoo-Mi\'',40,3,2,' \'',' \'000000-22222','\'545-80','\'´ö·Ê¸® »ê 16-1¹øÁö\'','\'000)000-1000\'','\'010-000-1010\'','\'198'),('(\'20041007',' \'Á¤ÀÎÁ¤\'',' \'Jeung Yin-Jeung\'',40,2,2,' \'',' \'000000-22222','\'540-85','\'ºÎ¿µ7Â÷APT 304µ¿ 1210È£\'','\'000)000-0007\'','\'010-000-7777\'','\'198'),('(\'20041033',' \'¿¬°³¼Ò¹®',' \'Yean Gae-So-Moon\'',40,3,3,' \'',' \'0000000-1111','\'550-13','\'280-50¹øÁö\'','\'000)000-1111\'','\'000-111-2222\'','\'198'),('(\'20061011',' \'¹ÚÁ¤ÀÎ\'',' \'Park Jung-In\'',40,2,1,' \'',' \'000000-11111','\'150-05','\'985¹øÁö ·Ôµ¥APT 102-306\'','\'02)002-3333\'','\'010-333-3333\'','\'198');
+/*!40000 ALTER TABLE `student` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `subject`
+--
+
+DROP TABLE IF EXISTS `subject`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `subject` (
+  `sub_code` char(5) NOT NULL,
+  `sub_name` varchar(50) NOT NULL,
+  `sub_ename` varchar(50) DEFAULT NULL,
+  `create_year` char(4) DEFAULT NULL,
+  PRIMARY KEY (`sub_code`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `subject`
+--
+
+LOCK TABLES `subject` WRITE;
+/*!40000 ALTER TABLE `subject` DISABLE KEYS */;
+INSERT INTO `subject` VALUES ('INSER','',NULL,NULL),('(\'400',' \'µ¥ÀÌÅÍº£ÀÌ½º ÀÀ¿ë\'',' \'Database Application\'',' \'20'),('(\'401',' \'À©µµ¿ìÁî ÇÁ·Î±×·¡¹Ö\'',' \'Windows Programming\'',' \'19');
+/*!40000 ALTER TABLE `subject` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-05-04 12:12:30

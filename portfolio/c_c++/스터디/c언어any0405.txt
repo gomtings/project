@@ -1,0 +1,238 @@
+any-0405
+
+// AnyView.cpp : CAnyView 클래스의 구현
+//
+
+#include "stdafx.h"
+// SHARED_HANDLERS는 미리 보기, 축소판 그림 및 검색 필터 처리기를 구현하는 ATL 프로젝트에서 정의할 수 있으며
+// 해당 프로젝트와 문서 코드를 공유하도록 해 줍니다.
+#ifndef SHARED_HANDLERS
+#include "Any.h"
+#endif
+
+#include "AnyDoc.h"
+#include "AnyView.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+
+// CAnyView
+
+IMPLEMENT_DYNCREATE(CAnyView, CView)
+
+BEGIN_MESSAGE_MAP(CAnyView, CView)
+	// 표준 인쇄 명령입니다.
+	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
+	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
+	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CAnyView::OnFilePrintPreview)
+	ON_WM_CONTEXTMENU()
+	ON_WM_RBUTTONUP()
+	ON_WM_LBUTTONDOWN()
+END_MESSAGE_MAP()
+
+// CAnyView 생성/소멸
+
+CAnyView::CAnyView()
+{
+	// TODO: 여기에 생성 코드를 추가합니다.
+	for (int i=0;i<10;i++)
+		for(int j=0;j<15;j++)
+		{
+			Block[i][j] = rand()%7;
+			
+		}
+		clk=0;
+}
+
+CAnyView::~CAnyView()
+{
+}
+
+BOOL CAnyView::PreCreateWindow(CREATESTRUCT& cs)
+{
+	// TODO: CREATESTRUCT cs를 수정하여 여기에서
+	//  Window 클래스 또는 스타일을 수정합니다.
+
+	return CView::PreCreateWindow(cs);
+}
+
+// CAnyView 그리기
+
+void CAnyView::OnDraw(CDC* pDC)
+{
+	CAnyDoc* pDoc = GetDocument();
+	ASSERT_VALID(pDoc);
+	if (!pDoc)
+		return;
+
+	// TODO: 여기에 원시 데이터에 대한 그리기 코드를 추가합니다.
+	
+	
+	CPoint pp;
+	//pp.x = 200, pp.y = 300;
+	  //drawblk(pp,5,0);//제그림
+	  //pp.y=330;
+	  //drawblk(pp,5,1);//반전 그림
+	  //pp.y = 90;
+	  //int i;
+	  //for (pp.x=0;pp.x<240; pp.x+=30,i++)
+		  //drawblk(pp,i,0);
+	  //pp.y = 120;
+	  //for (pp.x=0;pp.x<240; pp.x+=30,i++)
+		  //drawblk(pp,i,1);
+	for (int i=0;i<10;i++)
+		for(int j=0;j<15;j++)
+     { pp.x = i*30, pp.y = j*30;
+	 drawblk(pp, Block[i][j], 0);
+	}  
+	}
+
+
+// CAnyView 인쇄
+
+
+void CAnyView::OnFilePrintPreview()
+{
+#ifndef SHARED_HANDLERS
+	AFXPrintPreview(this);
+#endif
+}
+
+BOOL CAnyView::OnPreparePrinting(CPrintInfo* pInfo)
+{
+	// 기본적인 준비
+	return DoPreparePrinting(pInfo);
+}
+
+void CAnyView::OnBeginPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
+{
+	// TODO: 인쇄하기 전에 추가 초기화 작업을 추가합니다.
+}
+
+void CAnyView::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
+{
+	// TODO: 인쇄 후 정리 작업을 추가합니다.
+}
+
+void CAnyView::OnRButtonUp(UINT /* nFlags */, CPoint point)
+{
+	ClientToScreen(&point);
+	OnContextMenu(this, point);
+}
+
+void CAnyView::OnContextMenu(CWnd* /* pWnd */, CPoint point)
+{
+#ifndef SHARED_HANDLERS
+	theApp.GetContextMenuManager()->ShowPopupMenu(IDR_POPUP_EDIT, point.x, point.y, this, TRUE);
+#endif
+}
+
+
+// CAnyView 진단
+
+#ifdef _DEBUG
+void CAnyView::AssertValid() const
+{
+	CView::AssertValid();
+}
+
+void CAnyView::Dump(CDumpContext& dc) const
+{
+	CView::Dump(dc);
+}
+
+CAnyDoc* CAnyView::GetDocument() const // 디버그되지 않은 버전은 인라인으로 지정됩니다.
+{
+	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CAnyDoc)));
+	return (CAnyDoc*)m_pDocument;
+}
+#endif //_DEBUG
+
+//8가지 그림(int col) 과 반전그림(int ban)에서 선택하여서 위치 (CPoint pos)위치에 출력하는 함수
+void CAnyView :: drawblk( CPoint pos, int col, int ban)
+{
+	CClientDC dc(this);
+	CDC mDC;
+	mDC.CreateCompatibleDC(&dc);
+	CBitmap m1;
+	m1.LoadBitmapW(IDB_BITMAP2);
+	CBitmap * old = (CBitmap *) mDC.SelectObject(&m1);
+	dc.BitBlt(pos.x+1,pos.y+1, 29,29, &mDC, col*30, ban*30, SRCCOPY);
+	mDC.SelectObject(old);
+}
+
+// CAnyView 메시지 처리기
+
+
+void CAnyView::OnLButtonDown(UINT nFlags, CPoint point)//클레스마법사 에서 추가 :OnLButtonDown
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	if(clk==0) {
+		first(point);
+		
+	}
+	else
+	{
+		second(point);
+	
+	}
+	CView::OnLButtonDown(nFlags, point);
+}
+
+void CAnyView::first(CPoint pnt)
+{
+	CPoint pp;
+	pp.x=pnt.x/30;
+	pp.y=pnt.y/30;
+	if(pp.x>=0 &&pp.x<=9&&pp.y>=0 && pp.y<15)
+	{
+	CPoint pos;
+	pos.x=pp.x*30;
+	pos.y=pp.y*30;
+	drawblk(pos,Block[pp.x][pp.y],1);
+	Fir_pos = pp; 
+	clk=1;
+ }
+}
+
+void CAnyView::second(CPoint pnt)
+{
+	CPoint pp;
+	pp.x=pnt.x/30;
+	pp.y=pnt.y/30;
+	if(pp.x>=0 && pp.x<10 &&pp.y>=0 && pp.y<15)
+	{
+	if(Fir_pos.x==pp.x+1 || Fir_pos.x==pp.x-1 || Fir_pos.y==pp.y+1 || Fir_pos.y==pp.y-1) // 왼쪽 바꾸기,오른쪽 바꾸기
+	{	
+		CPoint pos;
+	int blk=Block[Fir_pos.x][Fir_pos.y];
+	pos.x=Fir_pos.x*30;
+	pos.y=Fir_pos.y*30;
+
+	//첫번째 클릭 위치에 두 번째 클릭 값을 넣을 것
+	drawblk(pos,Block[pp.x][pp.y],0);
+	//두번째 클릭 위치에 첫번째 값을 넣을 것 
+  pos.x =pp.x*30;
+  pos.y =pp.y*30;
+  drawblk(pos ,blk, 0);
+  Block[Fir_pos.x][Fir_pos.y]=Block[pp.x][pp.y];
+  Block[pp.x][pp.y]=blk;
+	clk=0;
+
+	}
+ }
+}
+
+
+----------------------------------------------------
+// 작업입니다.
+public:
+	void drawblk( CPoint pos, int , int);
+	int Block[10][15];
+	void first(CPoint pnt);
+	void second(CPoint pnt);
+	int clk;
+	CPoint Fir_pos;
+// 재정의입니다.

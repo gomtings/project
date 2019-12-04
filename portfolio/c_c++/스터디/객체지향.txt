@@ -1,0 +1,179 @@
+// ex5-1.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int a=199;
+	if(a<100)
+	{
+		printf("\n100보다 작군요...");
+	   printf(" \n거짓이면 이문장이 안보이죠...");
+	}
+	else
+	printf("\n100보다 큽니다....");
+	printf("\n참이면 이문장이 안보이죠....");
+	return 0;
+}
+
+
+---------------------------------
+5-7
+-------------------
+// ex5-7.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int a=75;
+	if(a>50)
+	{
+		if(a<100)
+			printf("\n 50보다 크고100보다 작다.");
+		else
+			printf("\n a는 100보다 크다.");
+	}
+	else
+		printf("\n a는 50보다 작다.");
+
+	return 0;
+}
+---------------------------------------------
+// ex5-7.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int a;
+	printf("\n 성적을 입력해 주세요");
+	scanf("%d",&a);
+
+	if(a>=90)
+	{
+		printf("\n 성적 :A ");
+	}
+	else if(a>=80) printf("\n 성적 : B ");
+	else if(a>=70) printf("\n 성적 : C ");
+	else if(a>=60) printf("\n 성적 : D ");
+	else           printf("\n 성적 : F ");
+	
+		return 0;
+}
+---------------------------------------
+// ex5-7.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int a;
+	case 1:
+	printf("\n 1-4중에 선택하세요");
+	scanf("%d,&a);
+
+		sw
+	case 1:
+	     printf("\n 1-4중에 선택하세요");
+	     break;
+	case 2 :
+		printf("\n 2를 선택햇습니다.");
+		break;
+    case 3 :
+		printf("\n 2를 선택햇습니다.");
+		break;
+    case 4 :
+		printf("\n 2를 선택햇습니다.");
+		break;
+	case default :
+		printf("\n 2를 선택햇습니다.");
+		break;
+
+
+		return 0;
+
+}
+---------------------------------
+ex11 /계산기
+--------------------------
+// ex11.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int a,b;
+	char ch;
+	printf("\n 첫번째숫자");
+	scanf("%d",&a);
+	printf("\n 연산자입력");
+	scanf_s(" %c",&ch,1);
+	printf("\n 두 번째 숫자");
+	scanf("%d",&b);
+
+	if(ch == '+')
+	{
+		printf("\n %d + %d = %d",a,b,a+b);
+	}
+	if(ch == '-')
+	{
+		printf("\n %d - %d = %d",a,b,a-b);
+	}
+	if(ch == '*')
+	{
+		printf("\n %d * %d = %d",a,b,a*b);
+	}
+	if(ch == '/')
+	{
+		printf("\n %d / %d = %f",a,b,(float)a/b);
+	}
+	return 0;
+}
+--------------------------------------
+// ex11.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int a,b;
+	char ch;
+	printf("\n 첫번째숫자");
+	scanf("%d",&a);
+	printf("\n 연산자입력");
+	scanf_s(" %c",&ch,1);
+	printf("\n 두 번째 숫자");
+	scanf("%d",&b);
+
+
+	switch(ch)
+	{
+	
+	case'+':
+		printf("\n %d + %d = %d",a,b,a+b);
+		break;
+	case'-':
+		printf("\n %d - %d = %d",a,b,a-b);
+		break;
+	case'*':
+		printf("\n %d * %d = %d",a,b,a*b);
+	     break;
+	case'/':
+		printf("\n %d / %d = %f",a,b,(float)a/b);
+		break;
+	}
+	return 0;
+}

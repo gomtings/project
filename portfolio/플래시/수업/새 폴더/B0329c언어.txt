@@ -1,0 +1,242 @@
+// B0329View.cpp : CB0329View 클래스의 구현
+//
+
+#include "stdafx.h"
+// SHARED_HANDLERS는 미리 보기, 축소판 그림 및 검색 필터 처리기를 구현하는 ATL 프로젝트에서 정의할 수 있으며
+// 해당 프로젝트와 문서 코드를 공유하도록 해 줍니다.
+#ifndef SHARED_HANDLERS
+#include "B0329.h"
+#endif
+
+#include "B0329Doc.h"
+#include "B0329View.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+
+// CB0329View
+
+IMPLEMENT_DYNCREATE(CB0329View, CView)
+
+BEGIN_MESSAGE_MAP(CB0329View, CView)
+	// 표준 인쇄 명령입니다.
+	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
+	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
+	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CB0329View::OnFilePrintPreview)
+	ON_WM_CONTEXTMENU()
+	ON_WM_RBUTTONUP()
+	ON_WM_TIMER()
+	ON_WM_DESTROY()
+END_MESSAGE_MAP()
+
+// CB0329View 생성/소멸
+
+CB0329View::CB0329View()
+{
+	// TODO: 여기에 생성 코드를 추가합니다.
+	x=rand()%3+1;
+	y=rand()%3+1;
+	z=rand()%3+1;
+	//POS.x=210,POS.y=450;
+	POS.x=450,POS.y=210;
+	//block3ER(POS);
+}
+
+CB0329View::~CB0329View()
+{
+}
+
+BOOL CB0329View::PreCreateWindow(CREATESTRUCT& cs)
+{
+	// TODO: CREATESTRUCT cs를 수정하여 여기에서
+	//  Window 클래스 또는 스타일을 수정합니다.
+
+	return CView::PreCreateWindow(cs);
+}
+
+// CB0329View 그리기
+
+void CB0329View::OnDraw(CDC* pDC)
+{
+	CB0329Doc* pDoc = GetDocument();
+	ASSERT_VALID(pDoc);
+	if (!pDoc)
+		return;
+
+	// TODO: 여기에 원시 데이터에 대한 그리기 코드를 추가합니다.
+	//CPoint pp;
+	//pp.x =200, pp.y = 300;
+	//BlockDraw(pp,1);
+	//pp.x =250, pp.y = 150;
+	//BlockDraw(pp,2);
+	for (int i= 0; i<=15;i++)
+	{
+    pDC->MoveTo(0,i*30);
+	pDC->LineTo(15*30,i*30);
+}
+	for (int i= 0; i<=15;i++)
+	{
+    pDC->MoveTo(i*30,0);
+	pDC->LineTo(i*30,15*30);
+  }
+}
+// CB0329View 인쇄
+
+
+void CB0329View::OnFilePrintPreview()
+{
+#ifndef SHARED_HANDLERS
+	AFXPrintPreview(this);
+#endif
+}
+
+BOOL CB0329View::OnPreparePrinting(CPrintInfo* pInfo)
+{
+	// 기본적인 준비
+	return DoPreparePrinting(pInfo);
+}
+
+void CB0329View::OnBeginPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
+{
+	// TODO: 인쇄하기 전에 추가 초기화 작업을 추가합니다.
+}
+
+void CB0329View::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
+{
+	// TODO: 인쇄 후 정리 작업을 추가합니다.
+}
+
+void CB0329View::OnRButtonUp(UINT /* nFlags */, CPoint point)
+{
+	ClientToScreen(&point);
+	OnContextMenu(this, point);
+}
+
+void CB0329View::OnContextMenu(CWnd* /* pWnd */, CPoint point)
+{
+#ifndef SHARED_HANDLERS
+	theApp.GetContextMenuManager()->ShowPopupMenu(IDR_POPUP_EDIT, point.x, point.y, this, TRUE);
+#endif
+}
+
+
+// CB0329View 진단
+
+#ifdef _DEBUG
+void CB0329View::AssertValid() const
+{
+	CView::AssertValid();
+}
+
+void CB0329View::Dump(CDumpContext& dc) const
+{
+	CView::Dump(dc);
+}
+
+CB0329Doc* CB0329View::GetDocument() const // 디버그되지 않은 버전은 인라인으로 지정됩니다.
+{
+	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CB0329Doc)));
+	return (CB0329Doc*)m_pDocument;
+}
+#endif //_DEBUG
+
+
+// CB0329View 메시지 처리기
+//화면CPoint pos에 하나의 블럭(int col)을 출력하는 함수 
+//col =0 흰색,col 1 =검은색, col 2=빨강 col 3 파랑
+void CB0329View :: BlockDraw(CPoint pos, int col)
+{
+	CClientDC dc(this);
+    CDC mDC;
+	mDC.CreateCompatibleDC(&dc);
+	CBitmap m1;
+	m1.LoadBitmapW(IDB_BITMAP1);
+	CBitmap *Pold = (CBitmap *) mDC.SelectObject(&m1);
+	dc.BitBlt(pos.x+1, pos.y+1, 29, 29, &mDC,col*30,0,SRCCOPY);
+	mDC.SelectObject(Pold);
+}
+//위치 CPoint pos3개의 블록 출력함수
+void CB0329View :: block3(CPoint pos)
+//{
+//	BlockDraw(pos,x); //x 출력 
+	//pos.y = pos.y+30;
+	//BlockDraw(pos,y); //y 출력
+	//pos.y = pos.y+30;
+	//BlockDraw(pos,z); //z 출력
+//}
+	//위치 CPoint pos3개의 블록 출력함수
+//void CB0329View :: block3ER(CPoint pos)
+//{
+	//BlockDraw(pos,0); //x 지우기 
+	//pos.y = pos.y+30;
+	//BlockDraw(pos,0); //y 지우기
+	//pos.y = pos.y+30;
+	//BlockDraw(pos,0); //z 지우기
+//}
+ {
+	BlockDraw(pos,x); //x 출력 
+    pos.x = pos.x+30;
+	BlockDraw(pos,y); //y 출력
+	pos.x = pos.x+30;
+	BlockDraw(pos,z); //z 출력
+}
+	//위치 CPoint pos3개의 블록 출력함수
+void CB0329View :: block3ER(CPoint pos)
+{
+	BlockDraw(pos,0); //x 지우기 
+	pos.x = pos.x+30;
+	BlockDraw(pos,0); //y 지우기
+	pos.x = pos.x+30;
+	BlockDraw(pos,0); //z 지우기
+}
+
+void CB0329View::OnTimer(UINT_PTR nIDEvent)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	block3ER(POS);//현 위치 지우기 
+	//if(POS.y>=360)//현위치 바꾸기
+    if(POS.x>=360)//현위치 바꾸기
+	{
+		//POS.y = 0;
+		POS.x = 0;
+		x=rand()%3+1;
+		y=rand()%3+1;
+		z=rand()%3+1;
+	}
+	//else POS.y =POS.y+30;
+	else POS.x =POS.x+30;
+	block3(POS);
+	CView::OnTimer(nIDEvent);
+}
+
+
+void CB0329View::OnDestroy()
+{
+	CView::OnDestroy();
+
+	// TODO: 여기에 메시지 처리기 코드를 추가합니다.
+	KillTimer(0);
+}
+
+
+void CB0329View::OnInitialUpdate()
+{
+	CView::OnInitialUpdate();
+
+	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
+	SetTimer(0,300,NULL);
+}
+
+
+--------------------------------------------------------------------------
+// 작업입니다.
+public:
+	void  BlockDraw(CPoint pos, int col); //하나의 블록 출력함수
+	void  block3(CPoint pos); //3개의 블록 출력 함수
+	void  block3ER(CPoint pos); //3개 블록 지우기 함수
+	int x, y ,z;     //3개의 블록 값 변수
+	CPoint POS;      //블록의 시작 위치
+// 재정의입니다.
+-----------------------------------------------------------------------------

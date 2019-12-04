@@ -1,0 +1,104 @@
+win32 프로젝트  
+콘솔 프로그램
+프로젝트명.cpp
+
+// ex8.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{	float a,b;
+    float result;
+	printf("첫 번째 계산할 값을 입력하시오 ==> ");
+    scanf_s("%f",&a);
+	printf("두 번째 계산할 값을 입력하시오 ==> ");
+    scanf_s("%f",&b);
+	result = a + b;
+	printf(" %5.2f + %5.2f = %5.2f",a,b,result);
+	result = a * b;
+	printf(" %5.2f + %5.2f = %5.2f",a,b,result);
+	result = a * b;
+	printf(" %5.2f + %5.2f = %5.2f",a,b,result);
+	result = a * b;
+	printf(" %5.2f + %5.2f = %5.2f",a,b,result);
+	result = (int) a % (int) b;
+	printf(" %d %% %d = %d\n",(int)a,(int)b,(int) result;
+
+	return 0;
+}
+
+
+
+---------------------------------------------------------------------------
+
+ex9
+win32 콘솔 프로젝트
+
+
+// ex09.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int money, C500,C100,C50,C10;
+	printf("교환할 동전은 ?");
+	scanf("%d",&money);
+
+	C500 = money/500;//500원 동전의 개수
+
+	money=money %  500; // 500원으로 교환할 돈을 제외한 나머지 돈
+
+	C100 = money/500;//100원 동전의 개수
+
+	money=money %  100; // 100원으로 교환할 돈을 제외한 나머지 돈
+	
+	C100 = money/500;//100원 동전의 개수
+	
+	C50 = money/50;//50원 동전의 개수
+
+	money=money %  50; // 50원으로 교환할 돈을 제외한 돈
+
+	C10 = money/10;//10원 동전의 개수
+
+	money=money %  10; // 10원으로 교환할 돈을 제외한 돈
+	printf("\n 500원 동전의 개수 = %d",C500);
+	printf("\n 100원 동전의 개수 = %d",C100);
+	printf("\n 50원 동전의 개수 = %d" ,C50);
+	printf("\n 10원 동전의 개수 = %d" ,C10);
+	printf("l\n 동전으로 바꾸지 못한 나머지 돈 = %d",money);
+	return 0;
+}
+
+
+
+----------------------------------------------------------------------------
+
+
+
+ex10 
+win32 콘솔 프로그램 
+
+// ex10.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int year;
+	printf("년도를 입력하시오");
+	scanf("%d",&year);
+if ( (year%4==0)&&(year%100!=0) || year%400==0)
+	{
+		printf("\n%d 년은 윤년이 아닙니다.",year);
+	}
+	else
+	{  
+		printf("\n%d 년은 윤년이 아닙니다.",year);
+}
+	return 0;
+}
