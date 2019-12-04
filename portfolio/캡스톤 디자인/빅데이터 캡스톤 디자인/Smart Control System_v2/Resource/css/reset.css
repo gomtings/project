@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'NanumGothicBlod';
+  font-style: normal;
+  font-weight: 700;
+  src: url(font/NanumGothic-Bold.eot);
+  src: url(font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumGothic-Bold.woff2) format('woff2'),
+       url(font/NanumGothic-Bold.woff) format('woff'),
+       url(font/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/NanumGothic-Regular.eot);
+  src: url(font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumGothic-Regular.woff2) format('woff2'),
+       url(font/NanumGothic-Regular.woff) format('woff'),
+       url(font/NanumGothic-Regular.ttf) format('truetype');
+}
+/* 요소(element) 여백 초기화  */
+body {font-family:'돋움',dotum,Helvetica,sans-serif;font-size:12px;color:#545454;line-height:18px}
+a,
+a:hover, 
+a:focus, 
+a:active {color:#545454;text-decoration:none}
+html, body,
+div, span,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, address, pre, cite,
+form, fieldset, input, textarea, select,
+table, th, td {
+	margin:0;
+	padding:0;
+	}
+
+/* 제목요소 */
+h1, h2, h3, h4, h5, h6 {  
+	font-size:100%;   
+	font-weight:normal;   
+	} 
+
+/* 테두리 없애기 */
+fieldset, img, abbr,acronym { border:0 none; } 
+
+/* 목록 */
+ol, ul { list-style:none; }
+
+/* 테이블 - 마크업에 'cellspacing="0"' 지정 함께 필요 */
+table {
+	border-collapse: separate;
+	border-spacing:0;
+	border:0 none;
+	}
+caption, th, td {
+	text-align:left;
+	font-weight: normal;
+}
+
+/* 텍스트 관련 요소 초기화 */
+address, caption, em, cite {
+	font-weight:normal;
+	font-style:normal;
+	}
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+
+/* 인용문 */
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+
+p {line-height:18px}
+
+/* 수평선*/
+hr {border:0;border-top:1px #ccc dashed}
+
+
+/* margin, padding */
+.margin_0 {margin:0}
+.mt0 {margin-top:0px !important}
+.mt5 {margin-top:5px !important}
+.mt8 {margin-top:8px !important}
+.mt10 {margin-top:10px !important}
+.mt15 {margin-top:15px !important}
+.mt20 {margin-top:20px !important}
+.mt25 {margin-top:25px !important}
+.mt30 {margin-top:30px !important}
+.mt35 {margin-top:35px !important}
+.mt40 {margin-top:40px !important}
+.mt45 {margin-top:45px !important}
+.mt50 {margin-top:50px !important}
+.mt55 {margin-top:55px !important}
+
+.mr0 {margin-right:0px !important}
+.mr5 {margin-right:5px !important}
+.mr10 {margin-right:10px !important}
+.mr15 {margin-right:15px !important}
+.mr20 {margin-right:20px !important}
+.mr25 {margin-right:25px !important}
+.mr30 {margin-right:30px !important}
+.mr35 {margin-right:35px !important}
+.mr40 {margin-right:40px !important}
+.mr45 {margin-right:45px !important}
+.mr50 {margin-right:50px !important}
+.mr55 {margin-right:55px !important}
+.mr65 {margin-right:65px !important}
+
+.mb0 {margin-bottom:0px !important}
+.mb3 {margin-bottom:3px !important}
+.mb5 {margin-bottom:5px !important}
+.mb7 {margin-bottom:7px !important}
+.mb10 {margin-bottom:10px !important}
+.mb15 {margin-bottom:15px !important}
+.mb20 {margin-bottom:20px !important}
+.mb25 {margin-bottom:25px !important}
+.mb30 {margin-bottom:30px !important}
+.mb35 {margin-bottom:35px !important}
+.mb40 {margin-bottom:40px !important}
+.mb45 {margin-bottom:45px !important}
+.mb50 {margin-bottom:50px !important}
+.mb55 {margin-bottom:55px !important}
+
+.ml0 {margin-left:0px !important}
+.ml5 {margin-left:5px !important}
+.ml10 {margin-left:10px !important}
+.ml12 {margin-left:12px !important}
+.ml15 {margin-left:15px !important}
+.ml20 {margin-left:20px !important}
+.ml25 {margin-left:25px !important}
+.ml30 {margin-left:30px !important}
+.ml35 {margin-left:35px !important}
+.ml40 {margin-left:40px !important}
+.ml45 {margin-left:45px !important}
+.ml50 {margin-left:50px !important}
+.ml55 {margin-left:55px !important}
+.ml130 {margin-left:130px !important}
+
+.padding_0 {padding:0 !important}
+.pt3 {padding-top:3px}
+.pt10 {padding-top:10px}
+.pt13 {padding-top:13px}
+.pt15 {padding-top:15px}
+.pt20 {padding-top:20px}
+
+.t_center {text-align:center !important}
+.t_left {text-align:left !important}
+.t_right{text-align:right !important}
+
+.v_middel * {vertical-align:middle}
+.v_top * {vertical-align:top}
+
+.fr {float:right}
+.fl {float:left}
+
+caption,
+.hidden {visibility:hidden;width:0;height:0;overflow:hidden;position:absolute;left:-9999999999999999px;font-size:0;line-height:0}
+.none {display:none}

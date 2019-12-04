@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <body>
+        <center>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>Smart Control</title>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b6691f8ad1899d6bf89ac976ffcaacc6"></script>
+            <!-- 그래프 API -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+            <!-- 오염물질 상세정보 -->
+            <div class="col-lg-4">
+
+                <!-- 오염물질 상세정보 타이틀 -->
+                <!-- 				<div id="right_towns_map" class="towns">
+                    <div class="intro_cont" style="height: 97px;">
+                        <p id="S_TIME" class="time" style="font-size: 10px;">2018년 11월
+                            09일 14시</p>
+                        <h4 style="font-size: 11px; top: 10px; padding: 0px 0px;">
+                            미세먼지(PM<sub>10</sub>)
+                        </h4>
+                        <p id="S_I10007_24AVG_VALUE_1" style="font-size: 20px;"
+                            class="f3 g2">
+                            44 <span class="blk">㎍/㎥</span>
+                        </p>
+                        <p id="S_VALUE_10007_1" class="f4"
+                            style="font-size: 13px; font-weight: bold; color: #000000">
+                            (24시간 :22<span style="font-size: 11px; font-weight: normal;">㎍/㎥</span>)
+                        </p>
+                        <p class="icon">
+                            <img id="S_SIMBOL" style="height: 61px;"
+                                src="/images/main/intro_cont_icon02.png" alt="심볼등급(1~4 or 7)">
+                        </p>
+                        <p id="S_I10007_GRADE_1" class="f5 g2"></p>
+                    </div>
+                </div> -->
+                <table class="table_05" align="right">
+                    <colgroup>
+                        <col style="width: 80px;">
+                        <col style="width: 40px;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">항목</th>
+                            <th scope="col">범례</th>
+                            <th scope="col">측정값</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td rowspan="2">미세먼지PM<sub>2.5</sub></td>
+                            <td rowspan="2">보통</td>
+                            <td><strong id="S_VALUE_10008"> 6 </strong>㎍/㎥(1H)</td>
+                        </tr>
+                        <tr>
+                            <td><strong id="S_I10008_24AVG_VALUE"> 8 </strong>㎍/㎥(24H)</td>
+                        </tr>
+                        <tr>
+                            <td>이산화탄소</td>
+                            <td>좋음</td>
+                            <td><strong id="S_VALUE_10003">0.044</strong> ppm(1H)</td>
+                        </tr>
+                        <tr>
+                            <td>이산화질소</td>
+                            <td rowspan="2">좋음</td>
+                            <td><strong id="S_VALUE_10006">0.015</strong> ppm(1H)</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+            <!-- 버튼 이벤트 -->
+            <div>
+                <input type="button" value="일간" style="width: 65px; height: 50px">
+                <input type="button" value="월간" onclick="	Highcharts.chart" style="width: 65px; height: 50px">
+                <input type="button" value="연간" style="width: 65px; height: 50px">
+                <!-- 			<div class="card-body">
+                <p class="text-white m-0">This call to action card is a great
+                    place to showcase some important information or display a clever
+                    tagline!</p>
+            </div> -->
+            </div>
+
+            <!-- Content Row -->
+            <div class="col">
+                <div id="container" style="min-width: 45%; height: 50%; margin: 0 auto"></div>
+                <div class="card h-1">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <script>
+						Highcharts.chart('container', {
+							chart: {
+								type: 'areaspline'
+							},
+							title: {
+								text: '오염 물질 그래프'
+							},
+							legend: {
+							//	layout: 'vertical',
+								align: 'left',
+								verticalAlign: 'top',
+								x:5,
+								y:-5,
+								floating: true,
+								borderWidth: 1,
+								backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+							},
+							/*xAxis: {
+								categories: [
+									'15',
+									'16',
+									'17',
+									'18',
+									'19',
+									'20',
+									'21',
+									'22',
+									'23',
+									'24',
+									'25',
+									'26'
+								],*/
+								yAxis: {
+									categories: [
+										'1월',
+										'2월',
+										'3월',
+										'4월',
+										'5월',
+										'6월',
+										'7월',
+										'8월',
+										'9월',
+										'10월',
+										'11월',
+										'12월'
+									],
+							/*zAxis: {
+								categories: [
+									'2007',
+									'2008',
+									'2009',
+									'2010',
+									'2011',
+									'2012',
+									'2013',
+									'2014',
+									'2015',
+									'2016',
+									'2017',
+									'2018'
+								],*/
+								plotBands: [{ // visualize the weekend
+									from: 4.5,
+									to: 6.5,
+									color: '#FFFFFF'
+								}]
+							},
+							yAxis: {
+								title: {
+									text: '오염 농도'
+								}
+							},
+							tooltip: {
+								shared: true,
+								valueSuffix: ' units'
+							},
+							credits: {
+								enabled: false
+							},
+							plotOptions: {
+								areaspline: {
+									fillOpacity: 0.5
+								}
+							},
+							series: [{
+								name: '이산화질소',
+								data: [0.123, 0.043, 0.052, 0.235, 0.024, 0.010, 0.112, 0.978, 0.142, 0.523, 0.252, 0.757, 0.374]
+							}, {
+								name: '이산화탄소',
+								data: [0.781, 0.183, 0.094, 0.023, 0.003, 0.145, 0.234, 0.089, 0.125, 0.867, 0.347, 0.893, 0.897]
+							}, {
+								name: '미세먼지PM',
+								data: [0.101, 0.023, 0.014, 0.093, 0.453, 0.005, 0.154, 0.673, 0.787, 0.994, 0.304, 0.321, 0.676]
+							}]
+						});
+                            </script>
+
+                        </p>
+                    </div>
+
+                </div>
+                <!-- 	<div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card One</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Rem magni quas ex numquam, maxime minus quam
+                            molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+            /.col-md-4
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card Two</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt
+                            pariatur voluptatem sunt quam eaque, vel, non in id dolore
+                            voluptates quos eligendi labore.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+            /.col-md-4
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card Three</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Rem magni quas ex numquam, maxime minus quam
+                            molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div> -->
+                <!-- /.col-md-4 -->
+
+            </div>
+            <!-- /.row -->
+            </div>
+            <!-- /.container -->
+            <!-- Footer -->
+            <!--footer class="py-5 bg-dark"-->
+            <!--div class="container"-->
+            <!--p class="m-0 text-center text-white">Copyright &copy; Your
+            Website 2017</p-->
+            <!--/div-->
+            <!-- /.container -->
+            <!--/footer-->
+            <!-- Bootstrap core JavaScript -->
+            <script src="<%=request.getContextPath()%>/css/Resource/vendor/jquery/jquery.min.js"></script>
+            <script src="<%=request.getContextPath()%>/css/Resource/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            </center>
+</body>
+</html>

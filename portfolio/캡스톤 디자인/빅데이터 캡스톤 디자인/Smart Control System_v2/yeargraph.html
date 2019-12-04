@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+    </div>
+    <center>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Smart Control</title>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b6691f8ad1899d6bf89ac976ffcaacc6"></script>
+        <!-- 그래프 API -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+        <div class="col-lg-4">
+        </div>
+        </div>
+        <!-- /.row -->
+        <!-- 버튼 이벤트 -->
+        <!-- Content Row -->
+        <div class="col">
+            <div id="container" style="min-width: 45%; height: 50%; margin: 0 auto"></div>
+            <div class="card h-1">
+                <div class="card-body">
+                    <p class="card-text">
+                        <script>
+                            function year() { // 연간 버튼 클릭 이벤트 함수 
+                                alert("연간 버튼 클릭 !!");
+                            }
+
+                            Highcharts.chart('container', {
+                                chart: {
+                                    type: 'areaspline'
+                                },
+                                title: {
+                                    text: '오염 물질 그래프'
+                                },
+                                legend: {
+                                    align: 'left',
+                                    verticalAlign: 'top',
+                                    x:5,
+                                    y:-5,
+                                    floating: true,
+                                    borderWidth: 1,
+                                    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+                                },
+                                yAxis: {
+                                    categories: [
+										'1월',
+										'2월',
+										'3월',
+										'4월',
+										'5월',
+										'6월',
+										'7월',
+										'8월',
+										'9월',
+										'10월',
+										'11월',
+										'12월'
+                                    ],
+                                    plotBands: [{ // visualize the weekend
+                                        from: 4.5,
+                                        to: 6.5,
+                                        color: '#FFFFFF'
+                                    }]
+                                },
+                                yAxis: {
+                                    title: {
+                                        text: '오염 농도'
+                                    }
+                                },
+                                tooltip: {
+                                    shared: true,
+                                    valueSuffix: ' units'
+                                },
+                                credits: {
+                                    enabled: false
+                                },
+                                plotOptions: {
+                                    areaspline: {
+                                        fillOpacity: 0.5
+                                    }
+                                },       
+                                series: [{
+                                    name: '이산화질소',
+                                    data: [0.1, 0.023, 0.032, 0.215, 0.124, 0.310, 0.512, 0.978, 0.042, 0.923, 0.352, 0.457, 0.174]
+                                }, {
+                                    name: '이산화탄소',
+                                    data: [0.381, 0.283, 0.594, 0.123, 0.403, 0.245, 0.334, 0.589, 0.425, 0.467, 0.747, 0.493, 0.197]
+                                }, {
+                                    name: '미세먼지PM',
+                                    data: [0.501, 0.223, 0.014, 0.493, 0.453, 0.205, 0.254, 0.873, 0.187, 0.294, 0.604, 0.521, 0.276]
+                                }]                       
+						});
+                        </script>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="<%=request.getContextPath()%>/css/Resource/vendor/jquery/jquery.min.js"></script>
+        <script src="<%=request.getContextPath()%>/css/Resource/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </center>
+</body>
+</html>

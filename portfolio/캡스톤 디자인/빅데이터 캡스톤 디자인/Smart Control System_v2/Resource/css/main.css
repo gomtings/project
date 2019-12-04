@@ -1,0 +1,441 @@
+#contents .cont .left {float:left;width:233px;margin-right:10px}
+#contents .cont .center {float:left;width:494px;position:relative}
+#contents .cont .right {float:right;width:233px}
+/* 메인페이지 h2 크기고정으로 레아아웃 수정20141229 */
+#contents .cont .left  h2 {height:34px;}
+#contents .cont .right  h2 {height:34px;}
+/* 메인페이지 h2 크기고정으로 레아아웃 수정20141229 */
+
+/* 상단 롤링레이아웃 적용 20141208 */
+#contents .main_top {border-bottom:1px #d1d9df solid;margin-bottom:10px}
+#contents .main_top .cont {padding:10px 0;position:relative}
+#contents .main_top h2 {display:inline-block;margin-right:5px}
+#contents .main_top .ticker {position:absolute;top:5px;left:50px; height: 40px; overflow: hidden; margin: 0; padding: 0; list-style: none;}
+#contents .main_top .ticker li { height: 30px; padding: 5px; margin: 0px 5px;}
+#contents .main_top .zoom {position:relative;position:absolute;top:8px;right:243px}
+#contents .main_top .search {position:relative;position:absolute;top:8px;right:0px}
+#contents .main_top .search input {padding:2px;border:1px blue solid}
+#contents .main_top .search button {position:absolute;top:2px;right:5px;border:0;width:17px;height:17px;background:url(../images/main/search_btn.png) no-repeat}
+/* 상단 롤링레이아웃 적용 20141208 */
+
+/* 황사 지도이미지로 사용 추가 20161121 */
+.weather2 {position:relative;padding-top:274px;background:url(../images/main/weather_bg.jpg) no-repeat left 0px;}
+.weather2 ul li {position:absolute}
+
+/* 황사 지도이미지로 사용 추가 20161121 */
+.weather {position:relative;padding-top:33px;background:url(../images/main/weather_bg.jpg) no-repeat left 33px}
+.weather .time {position:absolute;top:38px;right:5px;padding:3px 5px;background:url(../images/main/left_time_bg.png);border-radius:1px;color:#016cba}
+.weather h3 {position:absolute;top:0;left:0;width:46px;height:33px}
+.weather h3 a {font-size:0;height:0;display:block;width:46px;height:33px}
+.weather .wtt1 {width:47px;background:url(../images/main/left_w_tit01.png) no-repeat}
+.weather .wtt2 {left:47px;background:url(../images/main/left_w_tit02.png) no-repeat}
+.weather .wtt3 {left:93px;background:url(../images/main/left_w_tit03.png) no-repeat}
+.weather .wtt4 {left:139px;background:url(../images/main/left_w_tit04.png) no-repeat}
+.weather .wtt5 {left:185px;width:48px;background:url(../images/main/left_w_tit05.png) no-repeat}
+.weather .over .wtt1 {background:url(../images/main/left_w_tit01_over.png) no-repeat}
+.weather .over .wtt2 {background:url(../images/main/left_w_tit02_over.png) no-repeat}
+.weather .over .wtt3 {background:url(../images/main/left_w_tit03_over.png) no-repeat}
+.weather .over .wtt4 {background:url(../images/main/left_w_tit04_over.png) no-repeat}
+.weather .over .wtt5 {background:url(../images/main/left_w_tit05_over.png) no-repeat}
+.weather #weather_tab1,
+.weather #weather_tab2,
+.weather #weather_tab3,
+.weather #weather_tab4,
+.weather #weather_tab5 {display:none;border:1px #d1d9df solid;border-top:0;height:282px;position:relative}
+.weather .over #weather_tab1,
+.weather .over #weather_tab2,
+.weather .over #weather_tab3,
+.weather .over #weather_tab4,
+.weather .over #weather_tab5 {display:block}
+.weather .icon_info {position:absolute;bottom:7px;right:7px}
+.weather ul li {position:absolute}
+
+.warning_notice {position:relative;padding-top:0px}
+.warning_notice h3 {position:absolute;top:0;left:0;width:116px;height:32px}
+.warning_notice h3 a {font-size:0;height:0;display:block;width:116px;height:32px}
+.warning_notice .wtt1 {background:url(../images/main/left_t2_menu01.png) no-repeat}
+.warning_notice .wtt2 {left:117px;background:url(../images/main/left_t2_menu02.png) no-repeat}
+.warning_notice .wtt3 {left:156px;width:77px;background:url(../images/main/left_t2_menu03.png) no-repeat}
+.warning_notice .over .wtt1 {background:url(../images/main/left_t2_menu01_over.png) no-repeat}
+.warning_notice .over .wtt2 {background:url(../images/main/left_t2_menu02_over.png) no-repeat}
+.warning_notice .over .wtt3 {background:url(../images/main/left_t2_menu03_over.png) no-repeat}
+.warning_notice #weather_tab1,
+.warning_notice .weather_tab1,
+.warning_notice #weather_tab2,
+.warning_notice #weather_tab3 {display:none;border-top:0;border-bottom:0;height:196px;background-color:#fff}
+.warning_notice .over #weather_tab1,
+.warning_notice .over .weather_tab1,
+.warning_notice .over #weather_tab2,
+.warning_notice .over #weather_tab3 {display:block}
+.warning_notice ul {padding:6px}
+.warning_notice ul li a {display:block;padding:3px 3px 3px 10px;background:url(../images/common/blit06.gif) no-repeat left 10px;font-size:12px;letter-spacing:-1px;color:#666}
+.warning_notice ul li a span {color:#272727}
+
+/* 좌측하단 예보 스크롤스타일 적용 20150109*/
+.warning_notice .over #weather_tab1 ul { background-color: #fff;}
+.warning_notice .over .weather_tab1 ul { background-color: #fff;}
+/* 좌측하단 예보 스크롤스타일 적용 20150205*/
+.warning_notice .over #weather_tab2 ul { background-color: #fff;}
+
+/* 경보 롤링레이아웃 적용 20141224 */
+#weather_tab2 .ticker {position:absolute;top:30px;height: 160px; overflow: hidden; margin: 0; padding: 0; list-style: none;}
+#weather_tab2 .ticker li { height: 30px; padding: 5px; margin: 0px 5px;}
+
+/* 대기질경보 말줄임기능추가 20141205 */
+/* .warning_notice ul li a {display:block;padding:3px 3px 3px 10px;background:url(../images/common/blit06.gif) no-repeat left 10px;font-size:12px;letter-spacing:-1px;color:#666; width:210px; text-overflow:ellipsis; white-space:nowrap;overflow:hidden;} */
+/* 대기질경보 말줄임기능추가 20141205 */
+/* .warning_notice ul li a span {color:#272727} */
+
+
+#mmc_cont {position:relative;padding-top:71px}
+
+#mmc_cont .tab {border:1px #095aa1 solid;padding:4px 15px;height:23px;overflow:hidden;background-color:#ddf2f9;position:absolute;top:-33px;left:-1px;width:462px}
+#mmc_cont .tab ul {text-align:right}
+#mmc_cont .tab ul li {display:inline-block;font-size:11px;color:#3e3e3e;padding:3px 17px;font-family:NanumGothic;cursor:pointer}
+#mmc_cont .tab ul li.on {background-color:#0091fa;border-radius:15px;color:#fff;font-family:NanumGothicBlod;cursor:default}
+
+/* 시도별대기정보 통합대기환경지수 변경으로 인해 항목별 간격때문에 css 추가 20160401 */
+#mmc_cont .tab3 {border:1px #095aa1 solid;padding:4px 15px;height:23px;overflow:hidden;background-color:#ddf2f9;position:absolute;top:-33px;left:-1px;width:462px}
+#mmc_cont .tab3 ul {text-align:right}
+#mmc_cont .tab3 ul li {display:inline-block;font-size:11px;color:#3e3e3e;padding:3px 17px;font-family:NanumGothic;cursor:pointer}
+#mmc_cont .tab3 ul li.on {background-color:#0091fa;border-radius:15px;color:#fff;font-family:NanumGothicBlod;cursor:default}
+
+#mmc_cont .tab2 {border:1px #095aa1 solid;padding:4px 15px;height:23px;overflow:hidden;background-color:#ddf2f9;position:relative;position:absolute;top:-33px;left:-1px;width:462px}
+#mmc_cont .tab2 ul,
+#mmc_cont .tab2 h4 {position:absolute;top:2px;left:2px;cursor:pointer}
+#mmc_cont .tab2 h4 {font-size:0;line-height:0;background:url(../images/main/mmc_cont_tab2_title02.png) no-repeat;width:56px;height:32px;left:200px;top:0}
+#mmc_cont .tab2 h4.left {background:url(../images/main/mmc_cont_tab2_title01.png) no-repeat;width:53px;left:2px;height:28px;top:2px}
+#mmc_cont .tab2 ul {left:260px;top:4px}
+#mmc_cont .tab2 ul li {display:inline-block;font-size:11px;color:#3e3e3e;padding:3px 6px;font-family:NanumGothic;cursor:pointer}
+#mmc_cont .tab2 ul li.on {background-color:#0091fa;border-radius:15px;color:#fff;font-family:NanumGothicBlod;cursor:default}
+#mmc_cont .tab2 ul.left {left:60px}
+
+/* 시간위치 왼쪽으로 이동 20141226 */
+#mmc_cont .now_time {position:absolute;left:0px;top:8px;z-index:10;color:#5595a9;background-color:#cce2ee;padding:3px 8px;border-radius:3px}
+/* 시도별 대기질 우측하단문구위치 20141225 */
+#mmc_cont .sidoStr {position:absolute;left:299px;top:496px;font-size:11px; z-index:10;color:#5595a9;background-color:#cce2ee;padding:3px 8px;border-radius:3px}
+/* 실시간대기정보 PM10, PM2.5 우측하단문구위치 20150122 */
+/* #mmc_cont .sidoStr_real {position:absolute;width:195px;left:290px;top:475px;font-size:11px; z-index:10;color:#5595a9;background-color:#cce2ee;padding:1px 1px;border-radius:1px} */
+/* 실시간대기정보 PM10, PM2.5 24시간평균에서 1시간평균으로 변경되며 문구가변경 20160520 */
+ #mmc_cont .sidoStr_real {position:absolute;width:155px;left:326px;top:486px;font-size:11px; z-index:10;color:#5595a9;background-color:#cce2ee;padding:1px 1px;border-radius:1px}
+
+
+/* 측정망구분위치우측하단으로 이동20141219 */
+#mmc_cont .Legends {position:absolute;right:0px;bottom:0px;z-index:10;border:1px #016dba solid;border-bottom:0}
+/* 측정망구분위치우측하단으로 이동20141219 */
+#mmc_cont .Legends dt {background:url(../images/main/mcc_Legends_bg.jpg);font-size:12px;color:#272727;font-family:NanumGothicBlod;text-align:center;width:190px}
+#mmc_cont .Legends dt span {display:inline-block;height:20px;padding:7px 20px 0 0;background:url(../images/main/Legends_icon01.png) no-repeat right 7px;cursor:pointer}
+#mmc_cont .Legends dd {padding:10px;width:170px;background-color:#cce2ee;overflow:hidden;border-bottom:1px #016dba solid}
+#mmc_cont .Legends dd p {float:left;width:50%;font-size:11px;color:#272727}
+#mmc_cont .Legends dd p input {margin-right:5px;vertical-align:middle}
+
+#mmc_cont .Legends.on dt span {background:url(../images/main/Legends_icon02.png) no-repeat right 7px}
+
+#mmc_cont #mcc_01_title {display:block; position:absolute;left:0;top:0;width:166px;height:38px;background:url(../images/main/mmc_t1_off.png) no-repeat;cursor:pointer}
+#mmc_cont #mcc_02_title {display:block; position:absolute;left:166px;top:0;width:163px;height:38px;background:url(../images/main/mmc_t2_off.png) no-repeat;cursor:pointer}
+#mmc_cont #mcc_03_title {display:block; position:absolute;left:329px;top:0;width:165px;height:38px;background:url(../images/main/mmc_t3_off.png) no-repeat;cursor:pointer}
+#mmc_cont #mcc_01_title.on {background:url(../images/main/mmc_t1_on.png) no-repeat;cursor:default}
+#mmc_cont #mcc_02_title.on {background:url(../images/main/mmc_t2_on.png) no-repeat;cursor:default}
+#mmc_cont #mcc_03_title.on {background:url(../images/main/mmc_t3_on.png) no-repeat;cursor:default}
+
+
+/* main center tab1 */
+#mcc_01 {width:492px;height:540px;position:relative;border:1px #0960a7 solid;border-top:0}
+
+#mcc_01 .popup_info {position:absolute;top:300px;left:100px;background-color:#fff;border:1px #0091fa solid;padding:5px 10px; border-radius:5px; box-shadow:1px 1px 2px #555;z-index:11}
+#mcc_01 .popup_info p {white-space:pre}
+#mcc_01 .popup_info p strong {color:#0091fa}
+
+
+
+    /* main center tab1 cont */
+    #mcc_01 .map {}
+    #mcc_01 .map_cont {position:relative;position:absolute;top:0;left:0;z-index:5;width:492px;height:540px;display:none}
+    
+    #mcc_01 .map_cont .back,
+    #mcc_01 .map_cont .go_site {display:block;position:absolute;top:6px;left:214px;display:block;padding:6px 10px;background:url(../images/main/btn_bg01.jpg) repeat-x;border:1px #016cba solid;border-radius:5px;font-family:NanumGothicBlod;color:#505050;line-height:14px; background-size:auto 100%;font-size:11px}
+    #mcc_01 .map_cont .go_site {left:360px}
+/*  #mcc_01 .map_cont h4 {display:block;position:absolute;top:6px;left:247px;display:block;padding:6px 0;width:104px;text-align:center;background:#0091fa;border:1px #016cba solid;border-radius:5px;font-family:NanumGothicBlod;color:#fff;line-height:14px;font-size:11px} */
+    #mcc_01 .map_cont h4 {display:block;position:absolute;top:6px;left:305px;display:block;padding:6px 0;width:50px;text-align:center;background:#0091fa;border:1px #016cba solid;border-radius:5px;font-family:NanumGothicBlod;color:#fff;line-height:14px;font-size:11px}
+    
+    #mcc_01 .map_cont.area00 {display:block;z-index:0;background:url(../images/main/map_bg_00.jpg) no-repeat}
+        
+        /*1F영역오버*/
+        #mcc_01 .map_cont.area00 .over_map span {position:absolute;top:0;left:0;display:block;width:492px;height:540px;z-index:1;display:none}
+        #mcc_01 .map_cont.area00 .over_map01 {background:url(../images/main/over_map01.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map02 {background:url(../images/main/over_map02.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map03 {background:url(../images/main/over_map03.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map04 {background:url(../images/main/over_map04.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map05 {background:url(../images/main/over_map05.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map06 {background:url(../images/main/over_map06.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map07 {background:url(../images/main/over_map07.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map08 {background:url(../images/main/over_map08.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map09 {background:url(../images/main/over_map09.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map10 {background:url(../images/main/over_map10.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map11 {background:url(../images/main/over_map11.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map12 {background:url(../images/main/over_map12.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map13 {background:url(../images/main/over_map13.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map14 {background:url(../images/main/over_map14.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map15 {background:url(../images/main/over_map15.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map16 {background:url(../images/main/over_map16.jpg) no-repeat}
+        #mcc_01 .map_cont.area00 .over_map17 {background:url(../images/main/over_map17.jpg) no-repeat}
+        /*1F영역오버*/
+        
+        /*2F전국지도*/
+        #mcc_01 .map_cont.area00 .korea_map {position:absolute;top:0;left:0;z-index:2}
+        /*2F전국지도*/
+        
+        /*3F지점*/
+        .map_cont ul li{position:absolute;top:100px;left:100px;width:10px;height:10px;font-size:0;line-height:0;cursor:pointer;z-index:3}
+        /*3F지점*/
+    
+    
+    #mcc_01 .map_cont.area01 {background:url(../images/main/area01.jpg) no-repeat}
+    #mcc_01 .map_cont.area02 {background:url(../images/main/area02.jpg) no-repeat}
+    #mcc_01 .map_cont.area03 {background:url(../images/main/area03.jpg) no-repeat}
+    #mcc_01 .map_cont.area04 {background:url(../images/main/area04.jpg) no-repeat}
+    #mcc_01 .map_cont.area05 {background:url(../images/main/area05.jpg) no-repeat}
+    #mcc_01 .map_cont.area06 {background:url(../images/main/area06.jpg) no-repeat}
+    #mcc_01 .map_cont.area07 {background:url(../images/main/area07.jpg) no-repeat}
+    #mcc_01 .map_cont.area08 {background:url(../images/main/area08.jpg) no-repeat}
+    #mcc_01 .map_cont.area09 {background:url(../images/main/area09.jpg) no-repeat}
+    #mcc_01 .map_cont.area10 {background:url(../images/main/area10.jpg) no-repeat}
+    #mcc_01 .map_cont.area11 {background:url(../images/main/area11.jpg) no-repeat}
+    #mcc_01 .map_cont.area12 {background:url(../images/main/area12.jpg) no-repeat}
+    #mcc_01 .map_cont.area13 {background:url(../images/main/area13.jpg) no-repeat}
+    #mcc_01 .map_cont.area14 {background:url(../images/main/area14.jpg) no-repeat}
+    #mcc_01 .map_cont.area15 {background:url(../images/main/area15.jpg) no-repeat}
+    #mcc_01 .map_cont.area16 {background:url(../images/main/area16.jpg) no-repeat}
+    #mcc_01 .map_cont.area17 {background:url(../images/main/area17.jpg) no-repeat}
+    /* main center tab1 cont */
+    
+/* main center tab1 */
+
+/* main center tab2 */
+#mcc_02 {display:none;position:relative;width:492px;height:540px;position:relative;border:1px #0960a7 solid;border-top:0;background: url(../images/main/map_bg_00.jpg) no-repeat;}
+#mcc_02 ul.mcc_02_list li {position:absolute;top:0;left:0;font-size:13px;font-family:NanumGothicBlod;text-align:center}
+#mcc_02 ul.mcc_02_list li span {display:block;background-color:#2a80e9;margin-top:3px;padding:2px 10px;font-size:11px;color:#000;border-radius:10px}
+#mcc_02 ul.mcc_02_list li.color2 span {background-color:#31db75}
+#mcc_02 ul.mcc_02_list li.color3 span {background-color:#e6e61d}
+#mcc_02 ul.mcc_02_list li.color4 span {background-color:#ec3d3d}
+#mcc_02 ul.mcc_02_list li.color5 span {background-color:#ec3d3d}
+#mcc_02 ul.mcc_02_list li.color7 span {background-color:#fff}
+/* main center tab2 */
+
+
+/* main center tab3 */
+#mcc_03 {display:none;position:relative;width:492px;height:540px;position:relative;border:1px #0960a7 solid;border-top:0;background: url(../images/main/map_bg_00.jpg) no-repeat}
+
+#mcc_03 .popup_info {position:absolute;top:182px;left:156px;background-color:#fff;border:1px #0091fa solid;padding:5px 10px; border-radius:5px; box-shadow:1px 1px 2px #555;z-index:11}
+/* #mcc_03 .popup_info p {white-space:pre} 메인 3탭 오존경보 툴팁오류로 인한 주석처리20141231*/
+#mcc_03 .popup_info p strong {color:#0091fa}
+
+/* 탭3번째 텍스트보이게 수정 */
+#mcc_03 ul.mcc_05_list li {position:absolute;top:0;left:0;font-size:13px;line-height:0;font-family:NanumGothicBlod;text-align:center}
+
+#mcc_03 .map_cont {position:relative;position:absolute;top:0;left:0;z-index:5;width:492px;height:540px;display:none}
+
+    #mcc_03 .map_cont .back,
+    #mcc_03 .map_cont .go_site {display:block;position:absolute;top:6px;left:216px;display:block;padding:6px 10px;background:url(../images/main/btn_bg01.jpg) repeat-x;border:1px #016cba solid;border-radius:5px;font-family:NanumGothicBlod;color:#505050;line-height:14px; background-size:auto 100%;font-size:11px}
+    #mcc_03 .map_cont .go_site {left:360px}
+    #mcc_03 .map_cont h4 {display:block;position:absolute;top:6px;left:306px;display:block;padding:6px 0;width:50px;text-align:center;background:#0091fa;border:1px #016cba solid;border-radius:5px;font-family:NanumGothicBlod;color:#fff;line-height:14px;font-size:11px}
+    
+    
+    #mcc_03 .map_cont.area00 {display:block;z-index:0;background:url(../images/main/map_bg_00.jpg) no-repeat}
+ 
+ /*오존 분류처리*/
+ 
+   #mcc_03 .map_cont.o3 {position:relative;position:absolute;top:0;left:0;z-index:5;width:492px;height:540px;display:none}
+
+    #mcc_03 .map_cont.o3 .back
+    #mcc_03 .map_cont.o3 .go_site {display:block;position:absolute;top:6px;left:216px;display:block;padding:6px 10px;background:url(../images/main/btn_bg01.jpg) repeat-x;border:1px #016cba solid;border-radius:5px;font-family:NanumGothicBlod;color:#505050;line-height:14px; background-size:auto 100%;font-size:11px}
+    #mcc_03 .map_cont.o3 .go_site {left:360px}
+    #mcc_03 .map_cont.o3 h4 {display:block;position:absolute;top:6px;left:306px;display:block;padding:6px 0;width:50px;text-align:center;background:#0091fa;border:1px #016cba solid;border-radius:5px;font-family:NanumGothicBlod;color:#fff;line-height:14px;font-size:11px}
+    
+    
+    #mcc_03 .map_cont.o3.area00 {display:block;z-index:0;background:url(../images/main/map_bg_00.jpg) no-repeat}
+  
+ 
+ 
+        
+        /*1F영역오버*/
+        #mcc_03 .map_cont.area00 .over_map span {position:absolute;top:0;left:0;display:block;width:492px;height:540px;z-index:1;display:none}
+        #mcc_03 .map_cont.area00 .over_map01 {background:url(../images/main/over_map01.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map02 {background:url(../images/main/over_map02.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map03 {background:url(../images/main/over_map03.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map04 {background:url(../images/main/over_map04.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map05 {background:url(../images/main/over_map05.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map06 {background:url(../images/main/over_map06.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map07 {background:url(../images/main/over_map07.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map08 {background:url(../images/main/over_map08.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map09 {background:url(../images/main/over_map09.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map10 {background:url(../images/main/over_map10.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map11 {background:url(../images/main/over_map11.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map12 {background:url(../images/main/over_map12.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map13 {background:url(../images/main/over_map13.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map14 {background:url(../images/main/over_map14.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map15 {background:url(../images/main/over_map15.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map16 {background:url(../images/main/over_map16.jpg) no-repeat}
+        #mcc_03 .map_cont.area00 .over_map17 {background:url(../images/main/over_map17.jpg) no-repeat}
+        /*1F영역오버*/
+        
+        /*2F전국지도*/
+        #mcc_03 .map_cont.area00 .korea_map {position:absolute;top:0;left:0;z-index:2}
+        /*2F전국지도*/
+        
+        /*3F지점*/
+        .map_cont ul li{position:absolute;top:100px;left:100px;width:10px;height:10px;font-size:0;line-height:0;cursor:pointer;z-index:3}
+        /*3F지점*/
+    
+    
+    #mcc_03 .map_cont.area01 {background:url(../images/main/area01_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area02 {background:url(../images/main/area02_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area03 {background:url(../images/main/area03_addtion_.jpg) no-repeat}
+    #mcc_03 .map_cont.area04 {background:url(../images/main/area04_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area05 {background:url(../images/main/area05_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area06 {background:url(../images/main/area06_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area07 {background:url(../images/main/area07_addtion_.jpg) no-repeat}
+    #mcc_03 .map_cont.area08 {background:url(../images/main/area08_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area09 {background:url(../images/main/area09_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area10 {background:url(../images/main/area10_addtion_.jpg) no-repeat}
+    #mcc_03 .map_cont.area11 {background:url(../images/main/area11_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area12 {background:url(../images/main/area12_addtion_.jpg) no-repeat}
+    #mcc_03 .map_cont.area13 {background:url(../images/main/area13_addtion_.jpg) no-repeat}
+    #mcc_03 .map_cont.area14 {background:url(../images/main/area14_addtion.jpg) no-repeat}
+    #mcc_03 .map_cont.area15 {background:url(../images/main/area15_addtion_.jpg) no-repeat}
+    #mcc_03 .map_cont.area16 {background:url(../images/main/area16_addtion_.jpg) no-repeat}
+    #mcc_03 .map_cont.area17 {background:url(../images/main/area17_addtion_.jpg) no-repeat}
+    
+    /*오존 분류처리*/
+    
+    #mcc_03 .map_cont.area01.o3 {background:url(../images/main/area01_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area02.o3 {background:url(../images/main/area02_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area03.o3 {background:url(../images/main/area03_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area04.o3 {background:url(../images/main/area04_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area05.o3 {background:url(../images/main/area05_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area06.o3 {background:url(../images/main/area06_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area07.o3 {background:url(../images/main/area07_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area08.o3 {background:url(../images/main/area08_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area09.o3 {background:url(../images/main/area09_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area10.o3 {background:url(../images/main/area10_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area11.o3 {background:url(../images/main/area11_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area12.o3 {background:url(../images/main/area12_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area13.o3 {background:url(../images/main/area13_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area14.o3 {background:url(../images/main/area14_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area15.o3 {background:url(../images/main/area15_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area16.o3 {background:url(../images/main/area16_addtion_o3.jpg) no-repeat}
+    #mcc_03 .map_cont.area17.o3 {background:url(../images/main/area17_addtion_o3.jpg) no-repeat}
+    
+/* main center tab3 */
+
+#Legend {width:494px;height:63px;background:url(../images/main/Legends2_bg01.jpg) no-repeat}
+/* 범례구분 4번례로 크기로 수정 */
+#Legend ul li {float:left;text-align:center;text-align:center;padding-top:12px;position:relative;line-height:16px;width:82px;border-left:1px #fff solid;border-right:1px #a9adae solid;height:50px;color:#000}
+/* 범례구분 4번례로 크기로 수정 */
+#Legend ul li.start {border-left:0;width:62px;padding-top:18px;height:44px}
+#Legend ul li.last {border-right:0}
+#Legend ul li img {margin-bottom:5px}
+#Legend ul li input {position:absolute;top:10px;left:8px}
+#Legend ul li span {display:block;font-size:11px;color:#666}
+
+/*20161123 범례 추가*/
+#LegendAlert {width:494px;height:63px;background:url(../images/main/Legends2_bg01.jpg) no-repeat}
+/* 범례구분 4번례로 크기로 수정 */
+#LegendAlert ul li {float:left;text-align:center;text-align:center;padding-top:12px;position:relative;line-height:16px;width:71px;border-left:1px #fff solid;border-right:1px #a9adae solid;height:50px;color:#000}
+/* 범례구분 4번례로 크기로 수정 */
+#LegendAlert ul li.start {border-left:0;width:54px;padding-top:18px;height:44px}
+#LegendAlert ul li.last {border-right:0}
+#LegendAlert ul li img {margin-bottom:5px}
+#LegendAlert ul li input {position:absolute;top:10px;left:8px}
+#LegendAlert ul li span {display:block;font-size:11px;color:#666}
+/*20161123 범례 추가*/
+
+
+/* 시도별 대기정보 용 하단 범례추가 20160401 */
+#Legend2 {width:494px;height:63px;background:url(../images/main/Legends2_bg01.jpg) no-repeat}
+#Legend2 ul li {float:left;text-align:center;text-align:center;padding-top:12px;position:relative;line-height:16px;width:134px;border-left:1px #fff solid;border-right:1px #a9adae solid;height:50px;color:#000}
+#Legend2 ul li.start {border-left:0;width:84px;padding-top:18px;height:44px}
+#Legend2 ul li.last {border-right:0}
+#Legend2 ul li img {margin-bottom:5px}
+#Legend2 ul li input {position:absolute;top:10px;left:8px}
+#Legend2 ul li span {display:block;font-size:11px;color:#666}
+
+#Legend3 {width:494px;height:63px;background:url(../images/main/Legends2_bg01.jpg) no-repeat}
+#Legend3 ul li {float:left;text-align:center;text-align:center;padding-top:12px;position:relative;line-height:16px;width:202px;border-left:1px #fff solid;border-right:1px #a9adae solid;height:50px;color:#000}
+#Legend3 ul li.start {border-left:0;width:84px;padding-top:18px;height:44px}
+#Legend3 ul li.last {border-right:0}
+#Legend3 ul li img {margin-bottom:5px}
+#Legend3 ul li input {position:absolute;top:10px;left:8px}
+#Legend3 ul li span {display:block;font-size:11px;color:#666}
+/* 시도별 대기정보 용 하단 범례추가 20160401 */
+
+
+.popupzone_warp {position:relative;width:233px;height:129px;overflow:hidden}
+/* 팝업존 z-index 1001을 삭제20141212 */
+.control_btn {position:absolute;top:5px;right:5px;}
+/* 팝업존 z-index 1001을 삭제20141212 */
+.control_btn a {float:left;display:block;text-indent:-9999px;width:16px;height:14px;}
+.btn_popup_prev {background:url(http://www.ncuc.co.kr/image/main_new/btn_prev.gif) no-repeat 50% 50%;}
+.btn_popup_pause {background:url(http://www.ncuc.co.kr/image/main_new/btn_pause.gif) no-repeat 50% 0%;}
+.btn_popup_next {background:url(http://www.ncuc.co.kr/image/main_new/btn_next.gif) no-repeat 50% 50%;}
+
+.towns .title02 {border:1px #d1d9df solid;border-top:0;background-color:#ebebeb;font-size:13px;color:#272727;padding:5px 10px;font-family:NanumGothicBlod;position:relative}
+.towns .title02 a {position:absolute;top:4px;right:10px}
+.towns .intro_cont {height:121px;border-right:1px #d1d9df solid;border-left:1px #d1d9df solid;position:relative;padding:0 0 0 96px;background-color:#fff}
+.towns .intro_cont h4 {position:absolute;top:5px;left:5px;font-family:NanumGothicBlod;background-color:#b2d3ea;border-radius:3px;color:#005390;width:83px;text-align:center;padding:5px 0;font-size:12px}
+.towns .intro_cont .icon {position:absolute;top:35px;left:20px}
+.towns .intro_cont .time {text-align:center;color:#666;font-weight:bold;padding-top:10px}
+/* 등급색상조절을위해 클래스 접근추가 */
+/* 등급색상별 폰트 색상 조절 141229*/
+.towns .intro_cont .f3.g1 {text-align:center;background-color:#0000FF;border-radius:50px;color:#fff;font-size:25px;font-family:Arial;padding:3px 0 0 0;margin:5px;line-height:25px}
+.towns .intro_cont .f3.g2 {text-align:center;background-color:#00FF00;border-radius:50px;color:#000;font-size:25px;font-family:Arial;padding:3px 0 0 0;margin:5px;line-height:25px}
+.towns .intro_cont .f3.g3 {text-align:center;background-color:#FFFF00;border-radius:50px;color:#000;font-size:25px;font-family:Arial;padding:3px 0 0 0;margin:5px;line-height:25px}
+.towns .intro_cont .f3.g4 {text-align:center;background-color:#FF0000;border-radius:50px;color:#fff;font-size:25px;font-family:Arial;padding:3px 0 0 0;margin:5px;line-height:25px}
+.towns .intro_cont .f3.g7 {text-align:center;background-color:#FFFFFF;border-radius:50px;color:#000;font-size:25px;font-family:Arial;padding:3px 0 0 0;margin:5px;line-height:25px}
+.towns .intro_cont .f3 span {color:#FFFFFF;font-size:11px;font-family:gulim;margin:0 0 0 5px}
+.towns .intro_cont .f3 span.blk {color:#000000;font-size:14px;font-family:gulim;margin:0 0 0 5px}
+
+/* 등급색상조절을위해 클래스 접근추가 */
+
+.towns .intro_cont .f4 {color:#a6a6a6;font-size:11px;text-align:center}
+/* 등급색상조절을위해 클래스 접근추가 */
+.towns .intro_cont .f5.g1 {color:#0000FF;font-size:12px;text-align:center}
+.towns .intro_cont .f5.g2 {color:#00FF00;font-size:12px;text-align:center}
+.towns .intro_cont .f5.g3 {color:#FFFF00;font-size:12px;text-align:center}
+.towns .intro_cont .f5.g4 {color:#FF0000;font-size:12px;text-align:center}
+.towns .intro_cont .f5.g7 {color:#FFFFFF;font-size:12px;text-align:center}
+/* 등급색상조절을위해 클래스 접근추가 */
+
+
+
+#map_nav {height:0;}
+#map_nav p.nv a {display: block;font-size:16px;width:100%;position:absolute;top:-10000px;left:0;text-align:center;z-index:1000;}
+#map_nav p.nv a:focus, #map_nav li a.on {position:absolute;top:0;left:0;font-weight:bold;color:#fff;background:#272727;padding:20px 0;color:#ffffff;height:14px;}
+
+
+#mt_mmc1,
+#mt_mmc2,
+#mt_mmc3 {position:absolute;top:0;left:0;width:100%;height:100%;background-color:#fff;overflow:auto;z-index:2000;display:none;border:1px #016cba solid}
+.mt_mmc_cont {padding:10px;position:relative}
+.mt_mmc_cont h2 {font-size:18px;color:#000;font-weight:bold;padding-left:20px;background:url(../images/common/blit01.gif) no-repeat left center;margin-bottom:40px}
+.mt_mmc_cont .mt_mmc_close {position:absolute;top:15px;right:15px}
+.mt_mmc_cont h3 {position:absolute;top:40px;left:10px;width:16%;text-align:center}
+.mt_mmc_cont h3 a {}
+.mt_mmc_cont h3.on a {font-weight:bold;text-decoration:underline}
+.mt_mmc_cont .mt_mmc_table {display:none}
+
+
+.table_05 th,
+.table_05 td {padding:3px 4px 1px 4px}
+
+/* 대기질경보 미니맵에 데이터없을때 나올 문구 css 2016.12.29 */
+#right_towns_map .miniMap_popup_info {position:absolute;top:110px;left:26px;background-color:#fff;border:1px #545454 solid;padding:4px 7px; border-radius:10px; box-shadow:1px 1px 2px #555;z-index:1; font-size: 11px}
+
+@keyframes warningBlink { 0%{color:black;border:1px #545454 solid;} 50%{background-color:red;color:white;} }
+@-webkit-keyframes warningBlink { 0%{;color:black;border:1px #545454 solid;} 50%{background-color:red;color:white;} }
+
+#right_towns_map .miniMap_popup_warning {position:absolute;top:2px;margin:3px;padding:4px 7px; border-radius:10px; box-shadow:1px 1px 2px #555;z-index:1; font-size: 14px;animation:warningBlink 1s step-end infinite;-webkit-animation:warningBlink 1s step-end infinite;}
+
+/* #right_towns_map .miniMap_popup_info p strong {color:#0091fa}푸른색 */
+#right_towns_map .miniMap_popup_info p strong {color:#545454}/* 검회색 */
+
