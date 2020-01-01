@@ -1,6 +1,5 @@
 ﻿// AG(Auto_Git).cpp : 애플리케이션에 대한 진입점을 정의합니다.
 //
-
 #include "pch.h"
 #include "tipsware.h"
 #include <string.h> //문자열 관련 함수 헤더파일
@@ -32,6 +31,17 @@ TCHAR temp4[512];  // 에디트 컨트롤에 입력된 문자열을 저장할 �
 char m_buf[2048]; // Edit_text 파일의 텍스트를 저장 하기 위한 변수  
 HWND di_win, di_win_edit; //  현재 자신의 윈도우 핸들 저장 , 현 윈도우의 에디트의 핸들 저장
 
+/* 함수의 원형을 선언 합니다.*/
+int size(TCHAR STR[]);
+void Open_path_File();
+void OpenTextFile();
+void SaveTextFile();
+void Mywin();
+void OnDestroy();
+int CALLBACK MyMenuDialogProc(HWND ah_dlg, UINT a_message_id, WPARAM wParam, LPARAM lParam);
+int CALLBACK MyMenuDialog_info(HWND ah_dlg, UINT a_message_id, WPARAM wParam, LPARAM lParam);
+void OnCommand(INT32 a_ctrl_id, INT32 a_notify_code, void* ap_ctrl);
+
 struct AppData  // 프로그램에서 사용할 내부 데이터
 {
 	TargetData* p_target;  // 매크로 대상의 정보
@@ -58,7 +68,7 @@ void Open_path_File()   // 저장된 GIT_bash 의 경로를 가져오기 위한 
 	int index = 0;
 	DWORD dwRead;  // 실제 읽어온 바이트 수를 저장
 
-	HANDLE m_hFile = CreateFile("git_path.txt", GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);//git_path  Edit_text
+	HANDLE m_hFile = CreateFile("C:\\Program Files (x86)\\AG(Auto_Git)\\git_path.txt", GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);//git_path  Edit_text
 
 	if (m_hFile != INVALID_HANDLE_VALUE) // 파일 열기에 실패시에 CreateFile은 INVALID_HANDLE_VALUE 를 리턴한다.
 
@@ -86,7 +96,7 @@ void OpenTextFile()   // 저장된 사용자 입력 정보를 읽기 위한 함�
 	int index = 0;
 	DWORD dwRead;  // 실제 읽어온 바이트 수를 저장
 
-	HANDLE m_hFile = CreateFile("Edit_text.txt", GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);//git_path  Edit_text
+	HANDLE m_hFile = CreateFile("C:\\Program Files (x86)\\AG(Auto_Git)\\Edit_text.txt", GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);//git_path  Edit_text
 
 	if (m_hFile != INVALID_HANDLE_VALUE) // 파일 열기에 실패시에 CreateFile은 INVALID_HANDLE_VALUE 를 리턴한다.
 
@@ -144,7 +154,7 @@ void SaveTextFile()   // 에디트 의 문자열을 파일 로 저장 해주는 
 	strcat(string, ",");
 	strcat(string, save_commit);
 
-	HANDLE m_hFile = CreateFile("Edit_text.txt", GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+	HANDLE m_hFile = CreateFile(TEXT("C:\\Program Files (x86)\\AG(Auto_Git)\\Edit_text.txt"), GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 
 	if (m_hFile != INVALID_HANDLE_VALUE)
 	{
@@ -179,17 +189,18 @@ int CALLBACK MyMenuDialogProc(HWND ah_dlg, UINT a_message_id, WPARAM wParam, LPA
 	// 대화상자의 메뉴나 컨트롤 항목을 선택했을 때 발생하는 메시지
 	// WM_COMMAND 메시지는 다양한 컨트롤이 사용하기 때문에 어떤 컨트롤이 선택되었는지를 
 	// 확인할 수 있도록 wParam 항목의 하위 16비트에 컨트롤 ID가 저장되어 있습니다.
+	// SetWindowText(di_win_edit,cppath);
 	if (LOWORD(wParam) == IDBUT) {
 		DWORD dwRead;  // 실제 쓰여진 바이트 수를 저장
-		TCHAR git_path[1024];
-		GetWindowText(di_win_edit, git_path, 1024);
+		TCHAR git_path[1024]="";
+		GetWindowTextA(di_win_edit, git_path, 1024);
 		for (int i = 0; i < 1024; i++) {// 실제 문자열의 크기를 구함. 
-			size++;
-			if (git_path[i] == NULL) {
+			if (git_path[i] == '\0') {
 				break;
 			}
+			size++;
 		}
-		HANDLE m_hFile = CreateFile("git_path.txt", GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+		HANDLE m_hFile = CreateFile("C:\\Program Files (x86)\\AG(Auto_Git)\\git_path.txt", GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 		if (m_hFile != INVALID_HANDLE_VALUE)
 		{
 			WriteFile(m_hFile, git_path, size, &dwRead, NULL);
@@ -198,6 +209,19 @@ int CALLBACK MyMenuDialogProc(HWND ah_dlg, UINT a_message_id, WPARAM wParam, LPA
 		}
 	}
 	else if (a_message_id == WM_COMMAND) {
+		// '확인(IDOK)' 또는 '취소(IDCANCEL)' 버튼이 눌러진 경우
+		if (LOWORD(wParam) == IDOK || LOWORD(wParam) == IDCANCEL) {
+			// 대화 상자를 종료하는 함수, 어떤 버튼에 의해서 종료되었는지 
+			// 확인할 수 있도록 두 번째 인자에 버튼 ID 값을 넣는다.
+			EndDialog(ah_dlg, LOWORD(wParam));
+			return 1;
+		}
+	}
+	return 0;
+}
+int CALLBACK MyMenuDialog_info(HWND ah_dlg, UINT a_message_id, WPARAM wParam, LPARAM lParam) // 사용자 메시지 창 함수 
+{
+	if (a_message_id == WM_COMMAND) {
 		// '확인(IDOK)' 또는 '취소(IDCANCEL)' 버튼이 눌러진 경우
 		if (LOWORD(wParam) == IDOK || LOWORD(wParam) == IDCANCEL) {
 			// 대화 상자를 종료하는 함수, 어떤 버튼에 의해서 종료되었는지 
@@ -217,7 +241,7 @@ void OnCommand(INT32 a_ctrl_id, INT32 a_notify_code, void* ap_ctrl)
 		p_data = (AppData*)GetAppData();
 		// 메모장 프로그램의 'Window Class' 명칭이 'notepad' 입니다. 따라서
 		// 'notepad' 이름으로 대상을 검색합니다. 대상을 찾았다면 NULL 아닌 값이 저장됩니다.
-		p_data->p_target = FindTargetImage(0, "notepad", NULL); //mintty
+		p_data->p_target = FindTargetImage(0, "mintty", NULL); //mintty
 		if (p_data->p_target != NULL) { // update 를 파트 입니다.
 
 			// 메모장의 클라이언트 영역에서 (10, 10) 지점을 화면 좌표로 변환합니다.
@@ -245,20 +269,30 @@ void OnCommand(INT32 a_ctrl_id, INT32 a_notify_code, void* ap_ctrl)
 			strcat(commit_2, "\"");
 
 			// 한글 모드라고 가정하고 str 배열에 저장된 문자열을 메모장에 씁니다.
+			InputNormalString("cd", 0);
+			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString(pass_2, 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString("git init", 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString(id_2, 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString("git remote rm origin", 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString("git add .", 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString(commit_2, 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString("git push -u origin +master", 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 
 		}
 	}
@@ -266,7 +300,7 @@ void OnCommand(INT32 a_ctrl_id, INT32 a_notify_code, void* ap_ctrl)
 		p_data = (AppData*)GetAppData();
 		// 메모장 프로그램의 'Window Class' 명칭이 'notepad' 입니다. 따라서
 		// 'notepad' 이름으로 대상을 검색합니다. 대상을 찾았다면 NULL 아닌 값이 저장됩니다.
-		p_data->p_target = FindTargetImage(0, "notepad", NULL); //mintty
+		p_data->p_target = FindTargetImage(0, "mintty", NULL); //mintty
 		if (p_data->p_target != NULL) {
 
 			// 메모장의 클라이언트 영역에서 (10, 10) 지점을 화면 좌표로 변환합니다.
@@ -274,26 +308,51 @@ void OnCommand(INT32 a_ctrl_id, INT32 a_notify_code, void* ap_ctrl)
 			// 메모장에 글을 쓰기 위해서 (x, y)에 마우스를 클릭해서 메모장을 선택합니다.
 			MouseClickWrite(x, y);
 			// 에디트 컨트롤에 저장된 문자열을 str 배열에 복사한다.
-
+			InputNormalString("cd", 0);
+			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString(pass_2, 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString("git init", 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString(id_2, 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString("git remote rm origin", 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 			InputNormalString("git pull origin master", 0);
 			InputNormalString("\n", 1);
+			Sleep(1000);
 
 		}
-	}
+	}// explorer .
 	else if (a_ctrl_id == IDM_EXIT) {
-		DialogBox(NULL, MAKEINTRESOURCE(IDD_ITEM_MENU), NULL, MyMenuDialogProc);
+		DialogBox(NULL, MAKEINTRESOURCE(IDD_ITEM_MENU), NULL, MyMenuDialogProc); //  git_bash 경로를 설정 입력 받기 위한 다이얼 로그 입니다. 
 	}
 	else if (a_ctrl_id == IDM_ABOUT) {
-
+		DialogBox(NULL, MAKEINTRESOURCE(IDD_HALP), NULL, MyMenuDialog_info);// 개밟자 정보를 출력하는 다이얼 로그 입니다. 
 	}
+	else if (a_ctrl_id == ID_CALL) { // bash 를 실행 한다. 
+		Open_path_File();
+		ShellExecute(NULL, "open", cppath, NULL, NULL, SW_SHOW);//win32 api 함수 입니다. (Git Bash 를 실행 한다. );"C:\\Program Files\\Git\\git-bash.exe"
+	}
+	else if (a_ctrl_id == IDYES) {
+		p_data = (AppData*)GetAppData();
+		// 메모장 프로그램의 'Window Class' 명칭이 'notepad' 입니다. 따라서
+		// 'notepad' 이름으로 대상을 검색합니다. 대상을 찾았다면 NULL 아닌 값이 저장됩니다.
+		p_data->p_target = FindTargetImage(0, "mintty", NULL); //mintty
+		// 메모장의 클라이언트 영역에서 (10, 10) 지점을 화면 좌표로 변환합니다.
+		GetMousePosFromTarget(p_data->p_target, &x, &y, 10, 10);
+		// 메모장에 글을 쓰기 위해서 (x, y)에 마우스를 클릭해서 메모장을 선택합니다.
+		InputNormalString("cd", 0);
+		InputNormalString("\n", 1);
+		Sleep(1000);
+		InputNormalString("explorer .", 0);
+		InputNormalString("\n", 1);
+}
 }
 
 // 컨트롤을 조작할 때 호출할 함수를 설정한다.
@@ -316,6 +375,7 @@ int main()
 	AppData data = { NULL };  // 프로그램이 내부적으로 사용할 메모리를 선언한다.
 	SetAppData(&data, sizeof(data));  // 지정한 변수를 내부 데이터로 저장한다.i
 	if (flag == 0) {
+		SHCreateDirectory(NULL, L"C:\\Program Files (x86)\\AG(Auto_Git)");
 		OpenTextFile();
 		Open_path_File();
 		ShellExecute(NULL, "open", cppath, NULL, NULL, SW_SHOW);//win32 api 함수 입니다. (Git Bash 를 실행 한다. );"C:\\Program Files\\Git\\git-bash.exe"

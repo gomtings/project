@@ -1,2 +1,3 @@
 ﻿  AG(Auto_Git).cpp
+LINK : warning LNK4044: '/MANIFESTT' 옵션을 인식할 수 없습니다. 무시됩니다.
   AG(Auto_Git).vcxproj -> C:\Users\tkddn\source\repos\AG(Auto_Git)\Debug\AG(Auto_Git).exe

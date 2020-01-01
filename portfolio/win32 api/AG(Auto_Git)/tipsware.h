@@ -36,10 +36,12 @@ struct ExpDataType {
 };
 
 #include "EasyWin32.h"
+#include <Shlobj.h>
 
 #pragma comment(lib, "gdiplus")
 #pragma comment(lib, "Msimg32.lib")
 #pragma comment(lib, "WS2_32.lib")
+#pragma comment(lib, "shell32.lib")
 
 #ifdef _DEBUG
 	#pragma comment(lib, "DSH_EasyWin32.lib")
