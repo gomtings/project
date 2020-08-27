@@ -1,3 +1,2 @@
-﻿  AG(Auto_Git).cpp
-LINK : warning LNK4044: '/MANIFESTT' 옵션을 인식할 수 없습니다. 무시됩니다.
-  AG(Auto_Git).vcxproj -> C:\Users\tkddn\source\repos\AG(Auto_Git)\Debug\AG(Auto_Git).exe
+﻿LINK : warning LNK4044: '/MANIFESTT' 옵션을 인식할 수 없습니다. 무시됩니다.
+LINK : fatal error LNK1104: 'DSH_EasyWin32.lib' 파일을 열 수 없습니다.
