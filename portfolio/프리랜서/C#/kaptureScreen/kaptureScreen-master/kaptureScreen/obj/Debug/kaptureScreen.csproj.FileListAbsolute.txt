@@ -1,0 +1,11 @@
+D:\kaptureScreen-master\kaptureScreen-master\kaptureScreen\bin\Debug\kaptureScreen.exe
+D:\kaptureScreen-master\kaptureScreen-master\kaptureScreen\bin\Debug\kaptureScreen.pdb
+D:\kaptureScreen-master\kaptureScreen-master\kaptureScreen\obj\Debug\kaptureScreen.csproj.CoreCompileInputs.cache
+D:\kaptureScreen-master\kaptureScreen-master\kaptureScreen\obj\Debug\kaptureScreen.exe
+D:\kaptureScreen-master\kaptureScreen-master\kaptureScreen\obj\Debug\kaptureScreen.pdb
+C:\Users\tkddn\Desktop\kaptureScreen-master\kaptureScreen-master\kaptureScreen\obj\Debug\kaptureScreen.csprojAssemblyReference.cache
+C:\Users\tkddn\Desktop\kaptureScreen-master\kaptureScreen-master\kaptureScreen\obj\Debug\kaptureScreen.csproj.CoreCompileInputs.cache
+C:\Users\tkddn\Desktop\kaptureScreen-master\kaptureScreen-master\kaptureScreen\obj\Debug\kaptureScreen.exe
+C:\Users\tkddn\Desktop\kaptureScreen-master\kaptureScreen-master\kaptureScreen\obj\Debug\kaptureScreen.pdb
+C:\Users\tkddn\Desktop\kaptureScreen.exe
+C:\Users\tkddn\Desktop\kaptureScreen.pdb
