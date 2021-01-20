@@ -1,0 +1,3 @@
+﻿  pizza_price.c
+C:\Users\tkddn\source\repos\Project_comog\Project3\pizza_price.c(11,30): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Project3.vcxproj -> C:\Users\tkddn\source\repos\Project_comog\Debug\Project3.exe
