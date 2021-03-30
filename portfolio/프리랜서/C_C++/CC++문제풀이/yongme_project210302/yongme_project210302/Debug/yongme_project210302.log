@@ -1,0 +1,3 @@
+﻿  sales_performance.c
+C:\Users\tkddn\source\repos\yongme_project210302\yongme_project210302\sales_performance.c(12,17): warning C4101: 'graph' :참조되지 않은 지역 변수입니다.
+  yongme_project210302.vcxproj -> C:\Users\tkddn\source\repos\yongme_project210302\Debug\yongme_project210302.exe

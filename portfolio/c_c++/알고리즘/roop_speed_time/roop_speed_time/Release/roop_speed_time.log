@@ -1,0 +1,16 @@
+﻿  roop_speed_test.cpp
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(38,33): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(57,33): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(76,33): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(136,34): warning C4244: '+=': 'double'에서 'unsigned long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(137,37): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(156,34): warning C4244: '+=': 'double'에서 'unsigned long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(157,37): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(176,34): warning C4244: '+=': 'double'에서 'unsigned long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\roop_speed_time\roop_speed_time\roop_speed_test.cpp(177,37): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다.
+  2 of 80 functions ( 2.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  roop_speed_time.vcxproj -> C:\Users\tkddn\source\repos\roop_speed_time\Release\roop_speed_time.exe

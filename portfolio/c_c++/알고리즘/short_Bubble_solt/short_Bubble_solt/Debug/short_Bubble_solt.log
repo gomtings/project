@@ -1,0 +1,4 @@
+﻿  Bubblesolt.cpp
+C:\Users\tkddn\source\repos\short_Bubble_solt\short_Bubble_solt\Bubblesolt.cpp(92,18): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\tkddn\source\repos\short_Bubble_solt\short_Bubble_solt\Bubblesolt.cpp(89,6): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+  short_Bubble_solt.vcxproj -> C:\Users\tkddn\source\repos\short_Bubble_solt\Debug\short_Bubble_solt.exe
