@@ -1,10 +1,10 @@
 # portfolio_sngwoo
-
+<pre>
 ## 인적사항  
 <img src=mypic.jpg width=150 height=200>   
 
 * 이름 : 이상우(Lee Sang Woo)  
-* 생년월일 : 2000.09.09  
+* 생년월일 : 1994.11.29  
 * 출생지역 : 강원도 춘천   
 * 전공 : 한림대학교 소프트웨어융합대학 빅데이터(복수전공 : 빅데이터)
 * 취미 : 카페투어, 풍경 사진찍기, 음악감상,드라이브
@@ -281,3 +281,4 @@ git hub 의 다운로드 업로드를 git bash 를 이용 하여 명령어로 �
   <image src=디자인등록증02.png width=200 height=200>
  </div>		
 
+</pre>
