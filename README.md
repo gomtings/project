@@ -1,5 +1,4 @@
 # portfolio_sngwoo
-<pre>
 ## 인적사항  
 <img src=mypic.jpg width=150 height=200>   
 
@@ -19,6 +18,7 @@
 5. Ardoino 
 
 ## 프로젝트 경험 
+<pre>
 0.
 프로젝트명 : 전공과목 멘토링 _JAVA
 프로젝트 진행일 : 2018-3~
@@ -115,7 +115,7 @@ HTML 멘토링 교육
 주사용 기술 : LABVIEW
 프로젝트에 대한 본인의 역할을 기술해주세요. :
 로봇하드웨어 조립 및 테스트 진행  
-
+</pre>
 ## 대외활동
 
 2013. 02 ~ 2017. 03
@@ -280,5 +280,3 @@ git hub 의 다운로드 업로드를 git bash 를 이용 하여 명령어로 �
   <image src=디자인등록증01.png width=200 height=200>
   <image src=디자인등록증02.png width=200 height=200>
  </div>		
-
-</pre>
