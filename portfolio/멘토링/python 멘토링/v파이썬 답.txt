@@ -1,0 +1,119 @@
+1. =============================
+dansu = 0 # 입력될 단수 저장 
+value = 0 # 계산된 결과 저장 
+while True:
+    dansu = int(input('몇 단을 계산할까요?(0:종료)'))
+    if dansu == 0 :
+        print('이용해 주셔 감사합니다.')
+        break
+    else:
+        print(dansu,' 단은 바로..')
+        print('======================')
+    for i in range(1, 9):
+        value =  dansu * i   
+        print(dansu,' * ',i,'  =  ',value) 
+    print('======================')
+
+2. =============================
+
+
+from random import randint
+random_num = 0 # 컴퓨터 의 수 
+value=0 # 게임당 시도횟수 
+game_nbr=0; # 진행할 게임의 수
+usar=0 # 사용자 입력 값
+fail_count=0 # 오답 카운트
+Error_count=0 #오답임을 확인
+success_count=0 # 사용자 정답 카운트
+computer_success=0 # pc 정답 카운트  
+MIN = 1 # 랜덤 수의 최대값
+MAX = 100 # 랜덤 수의 최대값 
+game_nbr = int(input('게임 횟수'))
+for i in range(0,(game_nbr)):
+    Error_count=0
+    random_num = randint(MIN,MAX)
+    value = int(input('몇번 시도?'))
+    for j in range(0,value):
+        usar = int(input('얼마 일꺼 같아???'))
+        if random_num ==  usar :
+            success_count+=1
+            print('정답입니다.!')
+            break
+        else :
+            Error_count+=1
+            print('오답입니다.! 남은 시도 횟수는 : ',(value -j)-1)
+        if abs(usar-random_num) >= 10:
+            if usar > random_num : 
+                print('너무 커~')
+            else : 
+                print('너무 작아~')
+        elif abs(usar-random_num) <= 5:
+            print('근접 했어요!')
+    if Error_count == (value) :
+        print(value,' 번 의 기회를 모두 다 썻네요.. 다음 게임을 노려보세요!')
+        print('남은 게임의 수는 : ',(game_nbr-i)-1)
+        fail_count+=1
+        computer_success+=1    
+print('정답 횟수 : ',success_count,'오답 횟수 : ',fail_count,'입니다.')
+print('유저 정답 횟수 : ',success_count,'PC 정답 횟수 : ',computer_success) 
+
+3. =============================
+
+line = int(input('출력할 라인 수'))
+
+for i in range(1,line+1,1):
+    for k in range(i,(line-1)+1,1):
+        print(' ', end='')
+    for k in range(0,(i*2-1),1):
+        print('*', end='')
+    print('',end='\n')     
+                
+ 4. =============================   
+    
+from random import randint
+Schedule = list()  # 빈 리스트 생성
+insert_check=0 
+MENU = ['1. 할일 추가','2. 할일 삭제',]
+switch = 0
+select = 0
+random_num = 0
+while True:
+    random_num = randint(0,10) # 10/1 확율 로 컴퓨터가 질문 
+    if switch == 0 :
+        for i in MENU:
+            print(i)
+        if random_num == 10 # 컴퓨터가 사용자에게 질문하기 위한 조건을 판단. 
+            switch = 30 # 컴퓨터가 질문을 진행함.
+        else
+            switch = 1 # 정상적으로 진행함.
+        if len(Schedule) == 0 #
+            print('휴가')
+        else
+            
+    elif switch == 1 : 
+        select = int(input('무엇을 할까요? 1. :추가 abs(): 삭제'))
+        if select == 1:
+            switch = 10 
+        elif select == 2:
+            switch = 20
+        else
+            print('잘못 입력했습니다.')
+            switch = 1 
+    elif switch == 10 :
+        Schedule.insert(Schedule_index,input('어떤 일을 추가할까요??'))
+        switch = 0
+        insert_check = 1
+    elif switch == 20 :
+        if len(Schedule) != 0 # 삭제를 해야하는데 리스트가 비어 있을경우.
+            Schedule.remove(Schedule_index,input('어떤 일을 삭제할까요?'))
+            switch = 0
+        else
+            print('휴가')
+    elif switch == 30 :
+        check = input('일정을 추가 하려면 y 삭제 하려면 n 을 입력 하세요 없다면 아무 키나 입력해 주세요.')
+        if check == 'y'
+            switch == 10
+        elif check == 'n'
+            switch == 20
+        else
+            switch == 1
