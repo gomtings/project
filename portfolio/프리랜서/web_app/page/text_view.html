@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>게시판 목록</title>
+        <meta http-equiv="Content-Type" content="text/html">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="board_list_wrap">
+            <div id="top_bar"><img src="img/10.PNG"></div>
+            <div id="bottom_bar"><img src="img/9.PNG"></div>
+            <div class="board_list">
+                <div id="filltering">
+                    지역 : <input id="fillter_area" type="text">
+                    검색 : <input  id="fillter_text" type="text">
+                    <button id="btn_fillter" type="submit">검색</button>
+                </div>
+                <div class="board_list_head">
+                    <div class="num">번호</div>
+                    <div class="tit">게시물 이름</div>
+                    <div class="writer">글쓴이</div>
+                    <div class="sale">판매 여부</div>
+                </div>
+                <div class="board_list_body">
+                    <div class="item">
+                        <div class="num">6</div>
+                        <div class="tit"><a href="#">양파와 마늘 팔아요~</a></div>
+                        <div class="writer">정석민</div>
+                        <div class="sale">판매</div>
+                    </div>
+                    <div class="item">
+                        <div class="num">5</div>
+                        <div class="tit"><a href="#">양파와 마늘 팔아요~</a></div>
+                        <div class="writer">정석민</div>
+                        <div class="sale">판매</div>
+                    </div>
+                    <div class="item">
+                        <div class="num">4</div>
+                        <div class="tit"><a href="#">양파와 마늘 팔아요~</a></div>
+                        <div class="writer">정석민</div>
+                        <div class="sale">판매</div>
+                    </div>
+                    <div class="item">
+                        <div class="num">3</div>
+                        <div class="tit"><a href="#">토마토와 감자 교환</a></div>
+                        <div class="writer">정석민</div>
+                        <div class="sale">미판매</div>
+                    </div>
+                    <div class="item">
+                        <div class="num">2</div>
+                        <div class="tit"><a href="#">고구마 판매해요!</a></div>
+                        <div class="writer">정석민</div>
+                        <div class="sale">판매</div>
+                    </div>
+                    <div class="item">
+                        <div class="num">1</div>
+                        <div class="tit"><a href="#">양파와 마늘 팔아요~</a></div>
+                        <div class="writer">정석민</div>
+                        <div class="sale">판매</div>
+                    </div>
+                </div>
+            </div>
+            <div class="paging">
+                <a href="#" class="bt first">처음 페이지</a>
+                <a href="#" class="bt prev">이전 페이지</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="bt next">다음 페이지</a>
+                <a href="#" class="bt last">마지막 페이지</a>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        document.querySelector("#btn_fillter").addEventListener("click", () => {
+            var value, name, item, i;
+
+            value=document.getElementById("fillter_text").value.toUpperCase();
+            item=document.getElementsByClassName("item");
+
+            for(i=0;i<item.length;i++){
+                name=item[i].getElementsByClassName("tit");
+                if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+                    item[i].style.display = "flex";
+                }else{
+                    item[i].style.display= "none";
+                }
+            }
+        });
+    </script>
+    <script>
+    </script>
+
+</html>

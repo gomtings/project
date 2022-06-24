@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="ko">
+<head>
+    <title>Login</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#login").click(function() {
+            
+            let userId = $("#user_id").val();
+            let userPwd = $("#user_pw").val();
+    
+            var action = $("#form1").attr('action');
+            var form_data = {
+                user_id: userId,
+                user_pw: userPwd,
+                is_ajax: 1
+            };
+            $.ajax({
+                type: "POST",
+                url: action,
+                data: form_data,
+                success: function(response) {
+                    response = JSON.parse(response);
+                    $("#message").html(response);
+                    if(response.result == 'success') {
+                        //$("#message").html("<p style='color:green;font-weight:bold'>로그인 성공!</p>");
+                        //$("#message").html(response.id_chk+" , "+response.pw_chk);
+                        $("#form1").slideUp('slow');
+                        alert("로그인 성공!");
+                        location.href ='text_view.html';
+                    }else {
+                        if(response.result == 'id_fail'){
+                            alert(response.msg);
+                        }else if(response.result == 'pw_fail'){
+                            alert(response.msg);
+                        }else if(response.result == 'idpw_fail'){
+                            alert(response.msg);
+                        }else if(response.result == 'fail'){
+                            alert(response.msg);
+                        }
+                    }
+                }
+            });
+            return false;
+        });
+        $("#btn_signup").click(function() {
+            location.href ='signup.html';
+            
+        });
+    });
+    </script>
+    <style>
+        * {
+            font-weight: bold;
+        }
+
+        h1 {
+            color:darkgreen;
+            text-align: center;
+            margin-top:3px;
+        }
+        
+        #wrap {
+            width:380px;
+            height:580px;
+        }
+        
+        .login_form {
+            padding-top: 5px;
+            text-align: center;
+        }
+        
+        input {
+            margin-bottom: 12px;
+            width: 315px;
+            height: 50px;
+            font-size: 16px;
+            border: lightgray;
+        }
+        input::placeholder {
+            color: rgb(72, 190, 72);
+        }
+        
+        button {
+            border:none;
+            /*
+            width: 100px;
+            height: 30px;
+            font-size: 14px;
+            background-color: green;
+            */
+            border: 0px solid white;
+            border-radius:50px;
+        }
+        
+        #btn {
+            text-align:center;
+        }
+        #user_id {
+            font-size: 12px;
+            border-radius: 50px;
+            background-image:url('img/3.PNG');
+            background-repeat:no-repeat;
+        }
+        #user_pw {
+            font-size: 12px;
+            border-radius: 50px;
+            background-image:url('img/3.PNG');
+            background-repeat:no-repeat;
+        }
+        #img_2 {
+            margin-bottom:30px;
+        }
+        </style>
+</head>
+<body>
+    <div id="wrap">
+        <img src="img/5.PNG" id="top_bar">
+        <h1><img src="img/1.PNG"></h1>
+        <form id="form1" name="form1" action="login.php" method="post" class="login_form">
+            <input id="user_id" name="user_id" type="text" tabindex='1' placeholder="    아이디 또는 이메일을 입력해주세요."><br>
+            <input id="user_pw" type="password" tabindex='2' placeholder="    비밀번호를 입력해주세요."><br>
+            <img id="img_1" src="img/7.PNG">
+            <div id="btn">
+                <button type="button" id="login" tabindex='3' value="로그인"><img src="img/2.PNG"></button>
+                <img id="img_2" src="img/8.PNG">
+                <button type="button" id="btn_signup"><img src="img/0.PNG"></button>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>

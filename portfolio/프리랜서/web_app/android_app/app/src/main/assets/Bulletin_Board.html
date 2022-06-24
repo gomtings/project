@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>!!!파일 업데이트 시 주의 사항!!!</title>
+    <!-- ****************************** -->
+    <script language=javascript>
+var time_sec = 10;
+       function Go()
+        {
+  if(time_sec<0){
+   window.location="https://www.naver.com/"
+   return;
+  }
+   document.getElementById("time").innerHTML = time_sec;
+   time_sec--;
+  setTimeout('Go()',1000);
+
+  }
+</script>
+</head>
+<!-- 코딩 -->
+<body text=white bgcolor=black background="" onLoad=Go()>
+<pre>
+<center><big>인트로 페이지 입니다!!!!</big>
+<span id="time">5</span>초 뒤 자동으로 업데이트 페이지로 이동합니다.
+</center>
+</pre>
+</body>
+</html>

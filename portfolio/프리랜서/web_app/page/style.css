@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#bottom_bar {
+    position:fixed;
+    top:539px;
+    width:380px;
+    height:37px;
+}
+
+#top_bar {
+    top:0px;
+    width:380px;
+    height:37px;
+}
+#top_bar #img_1 {
+    width:330px;
+}
+#top_bar #img_2 {
+    width:50px;
+}
+
+#filltering {
+    margin-left:50px;
+    margin-bottom:15px;
+}
+
+#fillter_area {
+    margin-right:10px;
+    width:40px;
+    border-width:2px;
+}
+
+#fillter_text {
+    width:90px;
+    border-width:2px;
+}
+
+#btn_fillter {
+    font-weight: bold;
+    font-size:11px;
+    border-width:2px;
+}
+
+.board_list_wrap {
+    width: 380px;
+    height: 580px;
+    background-color: white;
+    border: 2px solid pink;
+}
+
+.board_list {
+    padding: 3px 10px;
+}
+
+.board_list_head,
+.board_list_body .item {
+    padding: 10px 0;
+    font-size: 0;
+}
+
+.board_list_head {
+    
+}
+
+.board_list_body .item {
+    border-bottom: 1px solid #ccc;
+}
+
+.board_list_head > div,
+.board_list_body .item > div {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.board_list_head > div {
+    font-weight: 600;
+}
+
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .tit {
+    width: 55%;
+}
+
+.board_list_body div.tit {
+    text-align: left;
+}
+
+.board_list_body div.tit a:hover {
+    text-decoration: underline;
+}
+
+.board_list .writer {
+    width: 15%;
+}
+
+.board_list .sale {
+    width: 20%;
+}
+
+/* paging */
+.paging {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.paging a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.paging a.bt {
+    width: 30px;
+    height: 30px;
+    background-color: lightgreen;
+    background-image: url(../page_bt.png);
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.paging a.bt:hover {
+    background-color: green;
+}
+
+.paging a.first {
+    background-position: 10px -40px;
+}
+
+.paging a.prev {
+    margin-right: 5px;
+    background-position: 10px 10px;
+}
+
+.paging a.next {
+    margin-left: 5px;
+    background-position: -40px 10px;
+}
+
+.paging a.last {
+    background-position: -40px -40px;
+}
+
+.paging a.num {
+    margin: 0 5px;
+}
+
+.paging a.num.on {
+    color: green;
+}
+
+.paging a.num:hover {
+    text-decoration: underline;
+}

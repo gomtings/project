@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#write").click(function() {
+            let board_a = $("#board_a").val();
+            let board_b = $("#board_b").val();
+            let board_c = $("#board_c").val();
+            let board_d = $("#board_d").val();
+            let board_e = $("#board_e").val();
+            let board_f = $("#board_f").val();
+            let board_rw = 'write';
+            var action = $("#form1").attr('action');
+            var form_data = {
+                board_a: board_a,
+                board_b: board_b,
+                board_c: board_c,
+                board_d: board_d,
+                board_e: board_e,
+                board_f: board_f,
+                board_rw: board_rw
+            };
+            $.ajax({
+                type: "POST",
+                url: action,
+                data: form_data,
+            success: function(response2) {
+                response2 = JSON.parse(response2);
+                if(response2.result == 'success') {
+
+                }else {
+
+                }
+            }
+        });
+            return false;
+    });
+    $("#read").click(function() {
+        var action = $("#form1").attr('action');
+        let board_rw = 'read';
+        var form_data = {
+            board_rw: board_rw
+        };
+        $.ajax({
+            type: "POST",
+            url: action,
+            data: form_data,
+        success: function(response2) {
+            response2 = JSON.parse(response2);
+            if(response2.result == 'success') {
+
+            }else {
+
+            }
+        }
+    });
+            return false;
+    });
+    });
+    </script>
+    <style>
+        * {
+            font-weight: bold;
+        }
+
+        h1 {
+            color:darkgreen;
+            text-align: center;
+            margin-top:3px;
+        }
+        
+        #wrap {
+            width:380px;
+            height:580px;
+        }
+        
+        .login_form {
+            padding-top: 5px;
+            text-align: center;
+        }
+        
+        input {
+            margin-bottom: 12px;
+            width: 315px;
+            height: 50px;
+            font-size: 16px;
+            border: lightgray;
+        }
+        input::placeholder {
+            color: rgb(72, 190, 72);
+        }
+        
+        button {
+            border:none;
+            /*
+            width: 100px;
+            height: 30px;
+            font-size: 14px;
+            background-color: green;
+            */
+            border: 0px solid white;
+            border-radius:50px;
+        }
+        
+        #btn {
+            text-align:center;
+        }
+        #user_id, #user_pw, #user_pw2, #user_name, #user_add, #user_num {
+            font-size: 12px;
+            border-radius: 50px;
+            background-image:url('img/3.PNG');
+            background-repeat:no-repeat;
+        }
+        #img_2 {
+            margin-bottom:30px;
+        }
+        </style>
+</head>
+<body>
+    <div id="wrap">
+        <img src="img/5.PNG" id="top_bar">
+        <h1><img src="img/1.PNG"></h1>
+        <form id="form1" name="form1" action="Get_board.php" method="post" class="login_form">
+            <input id="board_a" name="user_name" type="text" tabindex='1' placeholder="    이름."><br>
+            <input id="board_b" name="user_id" type="text" tabindex='2' placeholder="    아이디 또는 이메일을 입력해주세요."><br>
+            <input id="board_c" type="password" tabindex='3' placeholder="    비밀번호를 입력해주세요."><br>
+            <input id="board_d" type="password" tabindex='7' placeholder="    비밀번호를 확인해주세요."><br>
+            <input id="board_e" name="user_add" type="text" tabindex='4' placeholder="    주소."><br>
+            <input id="board_f" name="user_num" type="number" tabindex='5' placeholder="    전화번호."><br>
+            <div id="btn">
+                <button type="button" id="write" tabindex='6' value="가입"><img src="img/2.PNG"></button>
+                <button type="button" id="read" tabindex='6' value="가입"><img src="img/2.PNG"></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
