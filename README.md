@@ -9,6 +9,8 @@
 * 취미 : 카페투어, 풍경 사진찍기, 음악감상,드라이브
 * email : tkddn4508@naver.com
 * Github : https://github.com/gomtings
+* Home page : https://gomtings.github.io/
+* blog : https://velog.io/@gomtings/
 
 ## 사용 언어
 1. java
